@@ -4,13 +4,11 @@ import '../style/style.css'
 
 const Header = () => {
   return (
-    <div>
-      <header>
-        <img src={logo3}
-        alt="Logo de l'entreprise"
-        height="166px"
-        width="386px"></img>
-      </header>
+    <div className="HaederLogo">
+      <img src={logo3}
+      alt="Logo de l'entreprise"
+      height="166px"
+      width="386px"></img>
     </div>
   );
 };
