@@ -1,0 +1,74 @@
+/* COLOR */
+header {
+  height: 20vh;
+}
+
+.Footer {
+  height: 8vh;
+  background-color: #C4C4C4;
+  text-align: center;
+}
+
+/* Global style of the page*/
+.ConnectionPage {
+  background-color: #408CB7;
+  height: 69vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.LabelUser, .PasswordUser, .ConnectionValidate {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+/* Style of the page title*/
+.ConnectionTitle {
+  font-size: 48px;
+  font-style: bold;
+  font-family: 'lato';
+}
+
+/* Form style */
+.PasswordUser, .LabelUser {
+  font-size: 24px;
+  font-family: 'inter';
+}
+
+#user, #password {
+  height: 42px;
+  width: 280px;
+  background-color: #C4C4C4;
+}
+
+/*Button Style*/
+.ConnectionValidate {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 50px;
+}
+
+.ConnectionButton {
+  height: 43px;
+  width: 191px;
+  background-color: #7CB9D5;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+/*# sourceMappingURL=style.css.map */
