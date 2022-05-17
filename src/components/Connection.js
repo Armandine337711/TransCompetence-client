@@ -18,6 +18,7 @@ const connection = () => {
           <input 
             type="text" 
             id="user"
+            placeholder="Identifiant"
           ></input>
         </div>
          <br/>
@@ -30,6 +31,7 @@ const connection = () => {
           <input 
             type="password" 
             id="password"
+            placeholder="Mot de passe"
           ></input>
           <br/>
          </div>
