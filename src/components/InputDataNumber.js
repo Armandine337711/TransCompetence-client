@@ -14,12 +14,11 @@ class InputDataNumber extends Component {
         return(
             <div className='Input-data'>
 			  <label>{this.props.label}</label>
-			  <input
+			  <input 
                 type="number" 
                 value={this.state.value}
                 placeholder={this.props.placeholder}
                 onChange={(event) => this.setState({value: event.target.value })}
-
               />
 			</div>
         )

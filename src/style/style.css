@@ -1,5 +1,11 @@
 /* COLOR */
 /* Police */
+body {
+  width: 90%;
+  margin: auto;
+  margin-top: 10px;
+}
+
 .HeaderLogo {
   height: 20%;
 }
@@ -111,6 +117,8 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-top: 15px;
+  margin-bottom: 20px;
 }
 
 .HeaderAdminRight {
@@ -152,6 +160,8 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-top: 15px;
+  margin-bottom: 20px;
 }
 
 .HeaderSalesRight {
@@ -204,6 +214,8 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-top: 15px;
+  margin-bottom: 20px;
 }
 
 .HeaderFinancialRight {
@@ -256,6 +268,8 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-top: 15px;
+  margin-bottom: 20px;
 }
 
 .HeaderDBCRight {
@@ -299,5 +313,38 @@
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
   font-size: 24px;
+}
+
+.contButton {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.onglets {
+  background-color: #408CB7;
+  border: solid;
+  margin: 2px;
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+.container {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.active {
+  background-color: white;
+  color: #408CB7;
 }
 /*# sourceMappingURL=style.css.map */
