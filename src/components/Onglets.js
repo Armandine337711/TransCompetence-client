@@ -79,24 +79,24 @@ export default function Onglets() {
   return (
     <div>
         <div className='contButton'>
-            <div onClick={go1} className='onglets'>Data 1</div>
-            <div onClick={go2} className='onglets'>Data 2</div>
-            <div onClick={go3} className='onglets'>Data 3</div>
-            <div onClick={go4} className='onglets'>Data 4</div>
-            <div onClick={go5} className='onglets'>Data 5</div>
-            <div onClick={go6} className='onglets'>Data 6</div>
-            <div onClick={go7} className='onglets'>Data 7</div>
-            <div onClick={go8} className='onglets'>Data 8</div>
-            <div onClick={go9} className='onglets'>Data 9</div>
-            <div onClick={go10} className='onglets'>Data 10</div>
-            <div onClick={go11} className='onglets'>Data 11</div>
-            <div onClick={go12} className='onglets'>Data 12</div>
-            <div onClick={go13} className='onglets'>Data 13</div>
-            <div onClick={go14} className='onglets'>Data 14</div>
-            <div onClick={go15} className='onglets'>Data 15</div>
-            <div onClick={go16} className='onglets'>Data 16</div>
-            <div onClick={go17} className='onglets'>Data 17</div>
-            <div onClick={go18} className='onglets'>Data 18</div>
+            <div onClick={go1} className={`onglets ${stateOnglets === 1 ? "active" : ""}`}>Data 1</div>
+            <div onClick={go2} className={`onglets ${stateOnglets === 2 ? "active" : ""}`}>Data 2</div>
+            <div onClick={go3} className={`onglets ${stateOnglets === 3 ? "active" : ""}`}>Data 3</div>
+            <div onClick={go4} className={`onglets ${stateOnglets === 4 ? "active" : ""}`}>Data 4</div>
+            <div onClick={go5} className={`onglets ${stateOnglets === 5 ? "active" : ""}`}>Data 5</div>
+            <div onClick={go6} className={`onglets ${stateOnglets === 6 ? "active" : ""}`}>Data 6</div>
+            <div onClick={go7} className={`onglets ${stateOnglets === 7 ? "active" : ""}`}>Data 7</div>
+            <div onClick={go8} className={`onglets ${stateOnglets === 8 ? "active" : ""}`}>Data 8</div>
+            <div onClick={go9} className={`onglets ${stateOnglets === 9 ? "active" : ""}`}>Data 9</div>
+            <div onClick={go10} className={`onglets ${stateOnglets === 10 ? "active" : ""}`}>Data 10</div>
+            <div onClick={go11} className={`onglets ${stateOnglets === 11 ? "active" : ""}`}>Data 11</div>
+            <div onClick={go12} className={`onglets ${stateOnglets === 12 ? "active" : ""}`}>Data 12</div>
+            <div onClick={go13} className={`onglets ${stateOnglets === 13 ? "active" : ""}`}>Data 13</div>
+            <div onClick={go14} className={`onglets ${stateOnglets === 14 ? "active" : ""}`}>Data 14</div>
+            <div onClick={go15} className={`onglets ${stateOnglets === 15 ? "active" : ""}`}>Data 15</div>
+            <div onClick={go16} className={`onglets ${stateOnglets === 16 ? "active" : ""}`}>Data 16</div>
+            <div onClick={go17} className={`onglets ${stateOnglets === 17 ? "active" : ""}`}>Data 17</div>
+            <div onClick={go18} className={`onglets ${stateOnglets === 18 ? "active" : ""}`}>Data 18</div>
         </div>
         <div className='container'>
             {stateOnglets === 1 ?  <DataPackage1/>:null}
