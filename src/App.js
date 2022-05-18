@@ -11,7 +11,11 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
+<<<<<<< HEAD
         <DataEntries />
+=======
+        <FinancialHomePage />
+>>>>>>> 8df600d525acefb26906ca9dd6ad9422e836a462
       </header>
     </div>
   );

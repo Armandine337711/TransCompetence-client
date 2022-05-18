@@ -13,13 +13,17 @@ class InputDataNumber extends Component {
     render(){
         return(
             <div className='Input-data'>
+<<<<<<< HEAD
 			  <label>{this.props.label}</label>
 			  <input
+=======
+			  <label>{this.props.label} </label>
+			  <input 
+>>>>>>> 8df600d525acefb26906ca9dd6ad9422e836a462
                 type="number" 
                 value={this.state.value}
                 placeholder={this.props.placeholder}
                 onChange={(event) => this.setState({value: event.target.value })}
-
               />
 			</div>
         )
