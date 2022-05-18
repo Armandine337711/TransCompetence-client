@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-class InputDataNumber extends Component {
+class InputDataText extends Component {
     constructor(props){
         super(props);
 
@@ -13,16 +13,15 @@ class InputDataNumber extends Component {
     render(){
         return(
             <div className='Input-data'>
-			  <label>{this.props.label}</label>
-			  <input
-                type="number" 
+			  <label>{this.props.label} </label>
+			  <input 
+                type="Text" 
                 value={this.state.value}
                 placeholder={this.props.placeholder}
                 onChange={(event) => this.setState({value: event.target.value })}
-
               />
 			</div>
         )
     }
 }
-export default InputDataNumber;
+export default InputDataText;

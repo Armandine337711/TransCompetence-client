@@ -1,7 +1,7 @@
 import React from 'react';
 import '../style/style.css'
 
-const connection = () => {
+const DataEntries = () => {
   return (
     <div className="DataPage">
       <h1 className="Title">DONNEES A SAISIR</h1>
@@ -624,4 +624,4 @@ const connection = () => {
   );
 };
 
-export default connection;
+export default DataEntries;

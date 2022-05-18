@@ -1,7 +1,7 @@
 import React from 'react';
 import '../style/style.css'
 
-const connection = () => {
+const Connection = () => {
   return (
     <div className="ConnectionPage">
       <h1 className="ConnectionTitle">CONNEXION</h1>
@@ -48,4 +48,4 @@ const connection = () => {
   );
 };
 
-export default connection;
+export default Connection;
