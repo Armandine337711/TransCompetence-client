@@ -4,10 +4,10 @@ import Footer from '../components/Footer'
 
 const FinancialHomePage = () => {
   return (
-    <div>
+    <>
       <FinancialMenu />
       <Footer />
-    </div>
+    </>
   );
 };
 

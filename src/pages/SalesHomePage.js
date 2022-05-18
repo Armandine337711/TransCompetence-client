@@ -4,10 +4,10 @@ import Footer from '../components/Footer.js'
 
 const SalesHomePage = () => {
   return (
-    <div>
+    <>
       <SalesHeader />
       <Footer />
-    </div>
+    </>
   );
 };
 

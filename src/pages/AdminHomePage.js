@@ -5,10 +5,10 @@ import Footer from '../components/Footer';
 
 const AdminHomePage = () => {
   return (
-    <div>
+    <>
       <AdminMenu />
       <Footer />
-    </div>
+    </>
   );
 };
 
