@@ -1,0 +1,26 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contButton{
+    display: flex;
+    justify-content:space-around;
+}
+.onglets{
+    background-color: #408CB7;
+    border: solid;
+    margin: 2px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.container{
+}
+
+.active{
+    background-color: beige;
+}
