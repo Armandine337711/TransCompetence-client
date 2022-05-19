@@ -9,7 +9,7 @@ import DataEntries from './pages/DataEntries'
 
 function App() {
   return (
-    <div className="App">
+    <div>
         <FinancialHomePage />
     </div>
   );
