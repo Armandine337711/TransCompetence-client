@@ -6,6 +6,11 @@ const  DBCHomePage= () => {
   return (
     <>
       <DBCMenu />
+      <div className="MainBack">
+        <div className="MainBloc">
+
+        </div>
+      </div>
       <Footer />
     </>
   );

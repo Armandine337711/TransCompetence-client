@@ -8,7 +8,11 @@ const FinancialHomePage = () => {
   return (
     <>
       <FinancialMenu />
-      <Onglets/>
+      <div className="MainBack">
+        <div className="MainBloc">
+          <Onglets/>
+        </div>
+      </div>
       <Footer />
     </>
   );

@@ -6,6 +6,11 @@ const SalesHomePage = () => {
   return (
     <>
       <SalesHeader />
+      <div className="MainBack">
+        <div className="MainBloc">
+
+        </div>
+      </div>
       <Footer />
     </>
   );

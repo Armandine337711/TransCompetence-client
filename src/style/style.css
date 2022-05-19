@@ -7,7 +7,9 @@ body {
 }
 
 .HeaderLogo {
-  height: 20%;
+  height: 22vh;
+  margin-top: 10px;
+  margin-left: 50px;
 }
 
 .Footer {
@@ -16,10 +18,32 @@ body {
   text-align: center;
 }
 
+.MainBack {
+  background-color: #408CB7;
+  height: 65vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.MainBloc {
+  background-color: #C4C4C4;
+  width: 90%;
+  height: 80%;
+  border-radius: 30px;
+  padding: 10px;
+}
+
 /* Global style of the page*/
 .ConnectionPage {
   background-color: #408CB7;
-  height: 69vh;
+  height: 66vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -319,22 +343,20 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 .onglets {
   background-color: #408CB7;
-  border: solid;
+  border: solid 1.5px #408CB7;
+  color: white;
   margin: 2px;
-  border-radius: 5px;
+  padding: 5px;
+  border-radius: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   cursor: pointer;
 }
 

@@ -13,7 +13,8 @@ class InputDataNumber extends Component {
     render(){
         return(
             <div className='Input-data'>
-			  <label>{this.props.label}</label>
+
+			  <label>{this.props.label} </label>
 			  <input 
                 type="number" 
                 value={this.state.value}
