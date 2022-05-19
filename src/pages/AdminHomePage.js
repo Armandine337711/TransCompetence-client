@@ -1,5 +1,6 @@
 import React from 'react';
 import AdminMenu from '../components/AdminMenu';
+import AdminUserList from '../components/AdminUserList';
 import Footer from '../components/Footer';
 
 
@@ -9,6 +10,7 @@ const AdminHomePage = () => {
       <AdminMenu />
       <div className="MainBack">
         <div className="MainBloc">
+          <AdminUserList />
           
         </div>
       </div>

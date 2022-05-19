@@ -10,7 +10,7 @@ import DataEntries from './pages/DataEntries'
 function App() {
   return (
     <div>
-        <FinancialHomePage />
+        <SalesHomePage />
     </div>
   );
 }

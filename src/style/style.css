@@ -38,6 +38,7 @@ body {
   height: 80%;
   border-radius: 30px;
   padding: 10px;
+  text-align: center;
 }
 
 /* Global style of the page*/
@@ -371,9 +372,20 @@ body {
 }
 
 .ValidateButton {
-  padding: 5px;
+  padding: 10px;
   background-color: #7CB9D5;
+  border: solid 1px #C4C4C4;
   margin-top: 25px;
-  margin-left: 25px;
+  border-radius: 15px;
+  font-size: 1.3rem;
+}
+
+.salesTable {
+  width: 100%;
+  font-size: 1.2rem;
+}
+
+table input {
+  font-size: 1.2rem;
 }
 /*# sourceMappingURL=style.css.map */

@@ -2,7 +2,10 @@ import React from 'react';
 
 const ValidateFinancialData = () => {
   return (
-      <button type="button" class="ValidateButton">Valider</button>
+      <button 
+      ype="button" 
+      class="ValidateButton"> Valider
+      </button>
   );
 };
 
