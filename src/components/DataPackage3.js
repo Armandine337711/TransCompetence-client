@@ -5,7 +5,7 @@ import '../style/style.css'
 export class DataPackage3 extends Component {
   render() {
     return (
-      <div>
+      <>
         <InputDataNumber
         label="E12: Coûts kilométriques pneumatiques globaux (€/km)"
         id='E12'
@@ -34,7 +34,7 @@ export class DataPackage3 extends Component {
         label="E18: Durée de vie (km) Véhicule tracté"
         id='E18'
         />
-    </div>
+    </>
     )
   }
 }

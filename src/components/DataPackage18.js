@@ -5,7 +5,7 @@ import '../style/style.css'
 export class DataPackage18 extends Component {
   render() {
     return (
-      <div>
+      <>
         <InputDataNumber
             label="E59: Libellé de la composante de coût (texte libre)"
             id='E59'
@@ -22,7 +22,7 @@ export class DataPackage18 extends Component {
             label="E62: Montant annuel imputable à ce coût  (€/an)"
             id='E62'
         />
-      </div>
+      </>
     )
   }
 }

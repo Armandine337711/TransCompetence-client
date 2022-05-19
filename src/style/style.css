@@ -369,4 +369,11 @@ body {
   background-color: white;
   color: #408CB7;
 }
+
+.ValidateButton {
+  padding: 5px;
+  background-color: #7CB9D5;
+  margin-top: 25px;
+  margin-left: 25px;
+}
 /*# sourceMappingURL=style.css.map */

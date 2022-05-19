@@ -5,7 +5,7 @@ import '../style/style.css'
 export class DataPackage8 extends Component {
   render() {
     return (
-      <div>
+      <>
         <InputDataNumber
             label="E23: Valeur du véhicule moteur (€) "
             id='E23'
@@ -26,7 +26,7 @@ export class DataPackage8 extends Component {
             label="E27: Valeur de revente (€)"
             id='E27'
         />
-      </div>
+      </>
     )
   }
 }

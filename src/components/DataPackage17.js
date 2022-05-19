@@ -5,7 +5,7 @@ import '../style/style.css'
 export class DataPackage17 extends Component {
   render() {
     return (
-      <div>
+      <>
         <InputDataNumber
           label="E49: Nombre de conducteur(s) affecté(s) à l'exploitation du véhicule"
           id='E49'
@@ -46,7 +46,7 @@ export class DataPackage17 extends Component {
           label="E58: Nombre de mois payés"
           id='E58'
         />
-      </div>
+      </>
     )
   }
 }

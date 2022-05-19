@@ -6,7 +6,7 @@ import '../style/style.css'
 export class DataPackage1 extends Component {
   render() {
     return (
-      <div>
+      <>
         <InputDataNumber
         label="E01: Kilométrage annuel moyen du véhicule(km)"
         id='E01'
@@ -35,7 +35,7 @@ export class DataPackage1 extends Component {
         label="E07: Coefficient d'utilisation de cette capacité (%)"
         id='E07'
         />
-      </div>
+      </>
     )
   }
 }

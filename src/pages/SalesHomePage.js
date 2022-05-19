@@ -1,6 +1,7 @@
 import React from 'react';
 import SalesHeader from '../components/SalesHeader';
 import Footer from '../components/Footer.js'
+import SalesData from '../components/SalesData';
 
 const SalesHomePage = () => {
   return (
@@ -8,7 +9,7 @@ const SalesHomePage = () => {
       <SalesHeader />
       <div className="MainBack">
         <div className="MainBloc">
-
+          <SalesData />
         </div>
       </div>
       <Footer />

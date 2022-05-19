@@ -18,9 +18,10 @@ import DataPackage15 from '../components/DataPackage15';
 import DataPackage16 from '../components/DataPackage16';
 import DataPackage17 from '../components/DataPackage17';
 import DataPackage18 from '../components/DataPackage18';
+import ValidateFinancialData from './ValidateFinancialData';
 
 export default function Onglets() {
-    const [stateOnglets, setStateOnglets] = useState(5);
+    const [stateOnglets, setStateOnglets] = useState(1);
 
     const go1 = () => {
         setStateOnglets(1);
@@ -99,24 +100,27 @@ export default function Onglets() {
             <div onClick={go18} className={`onglets ${stateOnglets === 18 ? "active" : ""}`}>Data 18</div>
         </div>
         <div className='container'>
-            {stateOnglets === 1 ?  <DataPackage1/>:null}
-            {stateOnglets === 2 ?  <DataPackage2/>:null}
-            {stateOnglets === 3 ?  <DataPackage3/>:null}
-            {stateOnglets === 4 ?  <DataPackage4/>:null}
-            {stateOnglets === 5 ?  <DataPackage5/>:null}
-            {stateOnglets === 6 ?  <DataPackage6/>:null}
-            {stateOnglets === 7 ?  <DataPackage7/>:null}
-            {stateOnglets === 8 ?  <DataPackage8/>:null}
-            {stateOnglets === 9 ?  <DataPackage9/>:null}
-            {stateOnglets === 10 ?  <DataPackage10/>:null}
-            {stateOnglets === 11 ?  <DataPackage11/>:null}
-            {stateOnglets === 12 ?  <DataPackage12/>:null}
-            {stateOnglets === 13 ?  <DataPackage13/>:null}
-            {stateOnglets === 14 ?  <DataPackage14/>:null}
-            {stateOnglets === 15 ?  <DataPackage15/>:null}
-            {stateOnglets === 16 ?  <DataPackage16/>:null}
-            {stateOnglets === 17 ?  <DataPackage17/>:null}
-            {stateOnglets === 18 ?  <DataPackage18/>:null}
+            <form>
+                {stateOnglets === 1 ?  <DataPackage1/>:null}
+                {stateOnglets === 2 ?  <DataPackage2/>:null}
+                {stateOnglets === 3 ?  <DataPackage3/>:null}
+                {stateOnglets === 4 ?  <DataPackage4/>:null}
+                {stateOnglets === 5 ?  <DataPackage5/>:null}
+                {stateOnglets === 6 ?  <DataPackage6/>:null}
+                {stateOnglets === 7 ?  <DataPackage7/>:null}
+                {stateOnglets === 8 ?  <DataPackage8/>:null}
+                {stateOnglets === 9 ?  <DataPackage9/>:null}
+                {stateOnglets === 10 ?  <DataPackage10/>:null}
+                {stateOnglets === 11 ?  <DataPackage11/>:null}
+                {stateOnglets === 12 ?  <DataPackage12/>:null}
+                {stateOnglets === 13 ?  <DataPackage13/>:null}
+                {stateOnglets === 14 ?  <DataPackage14/>:null}
+                {stateOnglets === 15 ?  <DataPackage15/>:null}
+                {stateOnglets === 16 ?  <DataPackage16/>:null}
+                {stateOnglets === 17 ?  <DataPackage17/>:null}
+                {stateOnglets === 18 ?  <DataPackage18/>:null}
+                <ValidateFinancialData />
+            </form>
         </div>
     </div>
   )
