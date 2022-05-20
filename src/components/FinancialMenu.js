@@ -2,6 +2,7 @@ import React from 'react';
 import '../style/style.css'
 import Header from './Header'
 import DeconnectionButton from './DeconnectionButton';
+import {NavLink} from 'react-router-dom'
 
 
 
@@ -16,13 +17,19 @@ const FinancialMenu = () => {
         <div className="FinancialMenu">
           <ul className="FinancialMenuList">
             <li className="FinancialMenuItem" >
-              Tableau de bord
+              <NavLink to="#">
+               Tableau de bord
+              </NavLink>
             </li>
             <li className="FinancialMenuItem" >
-              Saisies données
+              <NavLink to="/financialhome">
+                Saisies données
+              </NavLink>
             </li>
             <li className="FinancialMenuItem">
-              Récapitulatif
+              <NavLink to="#">
+                Récapitulatif
+              </NavLink>
             </li>
           </ul>
         </div>

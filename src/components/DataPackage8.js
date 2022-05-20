@@ -7,26 +7,6 @@ export class DataPackage8 extends Component {
     return (
       <>
         <InputDataNumber
-<<<<<<< HEAD
-            label="E23: Valeur du véhicule moteur (€) "
-            id='E23'
-        />
-        <InputDataNumber
-            label="E24: Montant de l'emprunt (€)"
-            id='E24'
-        />
-        <InputDataNumber
-            label="E25: Taux d'intérêt de l'emprunt (%) "
-            id='E25'
-        />
-        <InputDataNumber
-            label="E26: Durée de l'emprunt (mois) "
-            id='E26'
-        />
-        <InputDataNumber
-            label="E27: Valeur de revente (€)"
-            id='E27'
-=======
           label="E59: Libellé de la composante de coût (texte libre)"
           id='E59'
         />
@@ -41,7 +21,6 @@ export class DataPackage8 extends Component {
         <InputDataNumber
           label="E62: Montant annuel imputable à ce coût  (€/an)"
           id='E62'
->>>>>>> ff855b16a3b93b74d73340c79ebe05dcfa29193e
         />
       </>
     )

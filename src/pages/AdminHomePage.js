@@ -11,10 +11,7 @@ const AdminHomePage = () => {
       <div className="MainBack">
         <div className="MainBloc">
           <AdminUserList />
-<<<<<<< HEAD
-=======
           
->>>>>>> ff855b16a3b93b74d73340c79ebe05dcfa29193e
         </div>
       </div>
       <Footer />

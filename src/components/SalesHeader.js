@@ -2,6 +2,7 @@ import React from 'react';
 import '../style/style.css'
 import Header from './Header'
 import DeconnectionButton from './DeconnectionButton';
+import { NavLink} from 'react-router-dom'
 
 
 const SalesHeader = () => {
@@ -15,10 +16,14 @@ const SalesHeader = () => {
         <div className="SalesMenu">
           <ul className="SalesMenuList">
             <li className="SalesMenuItem" >
-              Nouveaux Chiffrage
+              <NavLink to="/salesdata">
+                Nouveau Chiffrage
+              </NavLink>
             </li>
             <li className="SalesMenuItem" >
-              Historique
+              <NavLink to="/saleshistory">
+                Historique
+              </NavLink>
             </li>
           </ul>
         </div>

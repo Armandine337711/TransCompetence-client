@@ -7,12 +7,6 @@ export class DataPackage6 extends Component {
     return (
       <>
         <InputDataNumber
-<<<<<<< HEAD
-        label="E21: Durée d'utilisation du véhicule moteur (ans)"
-        id='E21'
-        />
-    </>
-=======
           label="E45: Montant annuel de l'assurance d'un véhicule RC + VI (€/an)"
           id='E45'
         />
@@ -29,7 +23,6 @@ export class DataPackage6 extends Component {
           id='E48'
         />
       </>
->>>>>>> ff855b16a3b93b74d73340c79ebe05dcfa29193e
     )
   }
 }

@@ -1,8 +1,5 @@
 import React, { Component } from 'react';
-<<<<<<< HEAD
-=======
 import '../style/style.css'
->>>>>>> ff855b16a3b93b74d73340c79ebe05dcfa29193e
 
 class InputDataNumber extends Component {
     constructor(props){

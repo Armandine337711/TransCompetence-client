@@ -6,12 +6,6 @@ export class DataPackage5 extends Component {
   render() {
     return (
       <>
-<<<<<<< HEAD
-        <InputDataNumber
-          label="E20: Dépenses annuelles de péages (€)"
-          id='E20'
-        />
-=======
       <InputDataNumber
         label="E33: Durée d'utilisation du véhicule tracté (ans)"
         id='E33'
@@ -60,7 +54,6 @@ export class DataPackage5 extends Component {
         label="E44: Valeur de revente (€) (1)"
         id='E44'
       />
->>>>>>> ff855b16a3b93b74d73340c79ebe05dcfa29193e
       </>
     )
   }

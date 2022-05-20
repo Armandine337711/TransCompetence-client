@@ -1,9 +1,12 @@
 /* COLOR */
 /* Police */
+/* Mixin header */
+/*Mixin form style */
 body {
   width: 90%;
   margin: auto;
   margin-top: 10px;
+  text-decoration: none;
 }
 
 .HeaderLogo {
@@ -105,6 +108,10 @@ body {
   padding: 0;
 }
 
+NavLink {
+  text-decoration: none;
+}
+
 .AdminMenuList {
   list-style-type: none;
   display: -webkit-box;
@@ -157,25 +164,6 @@ body {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   margin-right: 1%;
-}
-
-.ButtonDeconnection {
-  background-color: white;
-  font-size: 24px;
-  font-family: "inter";
-  color: #408CB7;
-  border: 1px solid #408CB7;
-  border-radius: 15px;
-  padding: 5px;
-}
-
-.HeaderButtonDeco {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
 }
 
 .GlobalHeaderSales {
@@ -352,15 +340,9 @@ body {
   background-color: #408CB7;
   border: solid 1.5px #408CB7;
   color: white;
-<<<<<<< HEAD
-  margin: 2px;
-  padding: 5px;
-  border-radius: 10px;
-=======
   margin: 1px;
   padding: 5px;
   border-radius: 5px;
->>>>>>> ff855b16a3b93b74d73340c79ebe05dcfa29193e
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -372,7 +354,7 @@ body {
   margin-bottom: 50px;
 }
 
-.active {
+.activeOnglet {
   background-color: white;
   color: #408CB7;
 }
@@ -384,6 +366,28 @@ body {
   margin-top: 25px;
   border-radius: 15px;
   font-size: 1.3rem;
+  -webkit-box-shadow: 3px 3px 3px;
+          box-shadow: 3px 3px 3px;
+}
+
+.ButtonDeconnection {
+  background-color: white;
+  font-size: 24px;
+  font-family: "inter";
+  color: #408CB7;
+  border: 1px solid #408CB7;
+  border-radius: 15px;
+  padding: 5px;
+  margin-left: 15px;
+}
+
+.HeaderButtonDeco {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 .salesTable {
@@ -393,11 +397,9 @@ body {
 
 table input {
   font-size: 1.2rem;
-<<<<<<< HEAD
   border-radius: 8px;
   -webkit-box-shadow: 4px 4px 4px grey;
           box-shadow: 4px 4px 4px grey;
-=======
 }
 
 .Input-data {
@@ -407,6 +409,5 @@ table input {
 .Input-data input {
   width: 100px;
   text-align: center;
->>>>>>> ff855b16a3b93b74d73340c79ebe05dcfa29193e
 }
 /*# sourceMappingURL=style.css.map */

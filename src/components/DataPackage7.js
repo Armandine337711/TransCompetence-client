@@ -7,11 +7,6 @@ export class DataPackage7 extends Component {
     return (
       <>
         <InputDataNumber
-<<<<<<< HEAD
-        label="E22: Mode de financement du véhicule moteur (1 pour Emprunt, 2 pour Crédit Bail, 3 pour Location Financière)"
-        id='E22'/>
-    </>
-=======
           label="E49: Nombre de conducteur(s) affecté(s) à l'exploitation du véhicule"
           id='E49'
         />
@@ -52,7 +47,6 @@ export class DataPackage7 extends Component {
           id='E58'
         />
       </>
->>>>>>> ff855b16a3b93b74d73340c79ebe05dcfa29193e
     )
   }
 }

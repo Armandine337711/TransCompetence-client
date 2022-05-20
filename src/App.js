@@ -1,21 +1,33 @@
-import './App.css';
+import {BrowserRouter, Routes, Route} from 'react-router-dom'
 import AdminHomePage from './pages/AdminHomePage'
-import SalesHomePage from './pages/SalesHomePage';
+import SalesDataPage from './pages/SalesDataPage';
 import FinancialHomePage from './pages/FinancialHomePage'
 import DBCHomePage from './pages/DBCHomePage'
-<<<<<<< HEAD
-import DataEntries from './pages/DataEntries'
-=======
-
->>>>>>> ff855b16a3b93b74d73340c79ebe05dcfa29193e
-
+import SalesHistoryPage from './pages/SalesHistoryPage';
+import UserConnection from './pages/UserConnection'
+import AdminNewUserPage from './pages/AdminNewUserPage'
 
 
 function App() {
   return (
-    <div>
-        <FinancialHomePage />
-    </div>
+    <>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<UserConnection />} />
+        <Route path="/saleshistory" element={<SalesHistoryPage />} />
+        <Route path="/salesdata" element={<SalesDataPage />} />
+
+        <Route path="/adminhome" element={<AdminHomePage />} />
+        <Route path="/adminnewuser" element={<AdminNewUserPage />} />
+
+
+
+        <Route path="/financialhome" element={<FinancialHomePage />} />
+
+
+      </Routes>
+    </BrowserRouter>
+    </>
   );
 }
 

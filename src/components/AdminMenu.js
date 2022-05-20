@@ -2,6 +2,7 @@ import React from 'react';
 import '../style/style.css'
 import Header from './Header'
 import DeconnectionButton from './DeconnectionButton';
+import {NavLink} from 'react-router-dom'
 
 
 const AdminMenu = () => {
@@ -15,10 +16,14 @@ const AdminMenu = () => {
         <div className="AdminMenu">
           <ul className="AdminMenuList">
             <li className=" AdminMenuItem" >
-              Liste utilisateurs
+              <NavLink to="/adminhome">
+                Liste utilisateurs
+              </NavLink>
             </li>
             <li className="AdminMenuItem" >
-              Ajouter
+              <NavLink to="/adminnewuser">
+                Ajouter
+              </NavLink>
             </li>
           </ul>
         </div>
