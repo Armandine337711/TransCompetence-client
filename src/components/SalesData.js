@@ -14,9 +14,14 @@ const SalesData = () => {
         </tr>
 
         <tr>
+<<<<<<< HEAD
           <td>
             <label for="relationAB">Parcours d'approche jusqu'au point de chargement : relation AB
             </label>
+=======
+          <td><label for="relationAB">Parcours d'approche jusqu'au point de chargement : relation AB 
+        </label>
+>>>>>>> ff855b16a3b93b74d73340c79ebe05dcfa29193e
         </td>
           <td>
             <input 

@@ -7,6 +7,7 @@ export class DataPackage8 extends Component {
     return (
       <>
         <InputDataNumber
+<<<<<<< HEAD
             label="E23: Valeur du véhicule moteur (€) "
             id='E23'
         />
@@ -25,6 +26,22 @@ export class DataPackage8 extends Component {
         <InputDataNumber
             label="E27: Valeur de revente (€)"
             id='E27'
+=======
+          label="E59: Libellé de la composante de coût (texte libre)"
+          id='E59'
+        />
+        <InputDataNumber
+          label="E60: Unité d'œuvre correspondant (texte libre)"
+          id='E60'
+        />
+        <InputDataNumber
+          label="E61: Nombre d'unité essai2 utilisé par an"
+          id='E61'
+        />
+        <InputDataNumber
+          label="E62: Montant annuel imputable à ce coût  (€/an)"
+          id='E62'
+>>>>>>> ff855b16a3b93b74d73340c79ebe05dcfa29193e
         />
       </>
     )

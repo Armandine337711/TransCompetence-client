@@ -1,5 +1,9 @@
 import React, {useState} from 'react';
 import '../style/style.css'
+<<<<<<< HEAD
+=======
+
+>>>>>>> ff855b16a3b93b74d73340c79ebe05dcfa29193e
 import DataPackage1 from './DataPackage1';
 import DataPackage2 from '../components/DataPackage2';
 import DataPackage3 from '../components/DataPackage3';
@@ -8,6 +12,7 @@ import DataPackage5 from '../components/DataPackage5';
 import DataPackage6 from '../components/DataPackage6';
 import DataPackage7 from '../components/DataPackage7';
 import DataPackage8 from '../components/DataPackage8';
+<<<<<<< HEAD
 import DataPackage9 from '../components/DataPackage9';
 import DataPackage10 from '../components/DataPackage10';
 import DataPackage11 from '../components/DataPackage11';
@@ -18,6 +23,8 @@ import DataPackage15 from '../components/DataPackage15';
 import DataPackage16 from '../components/DataPackage16';
 import DataPackage17 from '../components/DataPackage17';
 import DataPackage18 from '../components/DataPackage18';
+=======
+>>>>>>> ff855b16a3b93b74d73340c79ebe05dcfa29193e
 import ValidateFinancialData from './ValidateFinancialData';
 
 export default function Onglets() {
@@ -47,6 +54,7 @@ export default function Onglets() {
     const go8 = () => {
         setStateOnglets(8);
     }
+<<<<<<< HEAD
     const go9 = () => {
         setStateOnglets(9);
     }
@@ -98,6 +106,19 @@ export default function Onglets() {
             <div onClick={go16} className={`onglets ${stateOnglets === 16 ? "active" : ""}`}>Data 16</div>
             <div onClick={go17} className={`onglets ${stateOnglets === 17 ? "active" : ""}`}>Data 17</div>
             <div onClick={go18} className={`onglets ${stateOnglets === 18 ? "active" : ""}`}>Data 18</div>
+=======
+  return (
+    <div>
+        <div className='contButton'>
+            <div onClick={go1} className={`onglets ${stateOnglets === 1 ? "active" : ""}`}>Infos générales</div>
+            <div onClick={go2} className={`onglets ${stateOnglets === 2 ? "active" : ""}`}>Carburant</div>
+            <div onClick={go3} className={`onglets ${stateOnglets === 3 ? "active" : ""}`}>Entretien, pneus, péages</div>
+            <div onClick={go4} className={`onglets ${stateOnglets === 4 ? "active" : ""}`}>Véhicules moteurs</div>
+            <div onClick={go5} className={`onglets ${stateOnglets === 5 ? "active" : ""}`}>Véhicules tractés</div>
+            <div onClick={go6} className={`onglets ${stateOnglets === 6 ? "active" : ""}`}>Assurances et structure</div>
+            <div onClick={go7} className={`onglets ${stateOnglets === 7 ? "active" : ""}`}>Salaires</div>
+            <div onClick={go8} className={`onglets ${stateOnglets === 8 ? "active" : ""}`}>Autres coûts</div>
+>>>>>>> ff855b16a3b93b74d73340c79ebe05dcfa29193e
         </div>
         <div className='container'>
             <form>
@@ -109,6 +130,7 @@ export default function Onglets() {
                 {stateOnglets === 6 ?  <DataPackage6/>:null}
                 {stateOnglets === 7 ?  <DataPackage7/>:null}
                 {stateOnglets === 8 ?  <DataPackage8/>:null}
+<<<<<<< HEAD
                 {stateOnglets === 9 ?  <DataPackage9/>:null}
                 {stateOnglets === 10 ?  <DataPackage10/>:null}
                 {stateOnglets === 11 ?  <DataPackage11/>:null}
@@ -119,6 +141,8 @@ export default function Onglets() {
                 {stateOnglets === 16 ?  <DataPackage16/>:null}
                 {stateOnglets === 17 ?  <DataPackage17/>:null}
                 {stateOnglets === 18 ?  <DataPackage18/>:null}
+=======
+>>>>>>> ff855b16a3b93b74d73340c79ebe05dcfa29193e
                 <ValidateFinancialData />
             </form>
         </div>

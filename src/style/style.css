@@ -352,9 +352,15 @@ body {
   background-color: #408CB7;
   border: solid 1.5px #408CB7;
   color: white;
+<<<<<<< HEAD
   margin: 2px;
   padding: 5px;
   border-radius: 10px;
+=======
+  margin: 1px;
+  padding: 5px;
+  border-radius: 5px;
+>>>>>>> ff855b16a3b93b74d73340c79ebe05dcfa29193e
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -387,8 +393,20 @@ body {
 
 table input {
   font-size: 1.2rem;
+<<<<<<< HEAD
   border-radius: 8px;
   -webkit-box-shadow: 4px 4px 4px grey;
           box-shadow: 4px 4px 4px grey;
+=======
+}
+
+.Input-data {
+  text-align: left;
+}
+
+.Input-data input {
+  width: 100px;
+  text-align: center;
+>>>>>>> ff855b16a3b93b74d73340c79ebe05dcfa29193e
 }
 /*# sourceMappingURL=style.css.map */
