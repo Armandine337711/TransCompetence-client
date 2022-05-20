@@ -7,10 +7,22 @@ export class DataPackage6 extends Component {
     return (
       <>
         <InputDataNumber
-        label="E21: Durée d'utilisation du véhicule moteur (ans)"
-        id='E21'
+          label="E45: Montant annuel de l'assurance d'un véhicule RC + VI (€/an)"
+          id='E45'
         />
-    </>
+        <InputDataNumber
+          label="E46: Montant annuel de l'assurance marchandises transportées par véhicule (€/an)"
+          id='E46'
+        />
+        <InputDataNumber
+          label="E47: Montant annuel de taxe à l'essieu (€/an)"
+          id='E47'
+        />
+        <InputDataNumber
+          label="E48: Montant annuel des coûts de structure par véhicule (€/an)"
+          id='E48'
+        />
+      </>
     )
   }
 }

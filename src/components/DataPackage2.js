@@ -7,20 +7,20 @@ export class DataPackage2 extends Component {
     return (
       <>
         <InputDataNumber
-        label="E08: Consommation de Gazole aux 100 km (litre pour 100 km)"
-        id='E08'
+          label="E08: Consommation de Gazole aux 100 km (litre pour 100 km)"
+          id='E08'
         />
         <InputDataNumber
-        label="E09: Prix moyen du litre de Gazole route (hors toutes taxes récupérables) (€)"
-        id='E09'
+          label="E09: Prix moyen du litre de Gazole route (hors toutes taxes récupérables) (€)"
+          id='E09'
         />
         <InputDataNumber
-        label="E10: Part de l'approvisionnement citerne (%)"
-        id='E10'
+          label="E10: Part de l'approvisionnement citerne (%)"
+          id='E10'
         />
         <InputDataNumber
-        label="E11: Prix moyen du litre de Gazole citerne (hors toutes taxes récupérables) (€)"
-        id='E11'
+          label="E11: Prix moyen du litre de Gazole citerne (hors toutes taxes récupérables) (€)"
+          id='E11'
         />
       </>
     )
