@@ -4,23 +4,30 @@ import '../style/style.css'
 class InputDataNumber extends Component {
     constructor(props){
         super(props);
+        let IDs = this.props.label.substring(0,3)
 
         this.state = {
-            label:'',
-            ref: '',
+            id: IDs,
             value: ''
         };
+        this.handleChange = this.handleChange.bind(this)
     };
+    handleChange(e) {
+        this.setState({value: e.target.value})
+    }
+    
     render(){
         return(
             <div className='Input-data'>
-
-			  <label>{this.props.label} </label>
-			  <input 
+            
+            <label>{this.props.label} </label>
+            <input 
                 type="number" 
-                value={this.state.value}
+                id = {this.state.id}
+                value= {this.state.value}
                 placeholder={this.props.placeholder}
-                onChange={(event) => this.setState({value: event.target.value })}
+                onChange={this.handleChange}
+        
               />
 			</div>
         )
