@@ -3,6 +3,7 @@ import FinancialMenu from '../components/FinancialMenu'
 import Onglets from '../components/Onglets';
 import Footer from '../components/Footer'
 import '../style/style.css'
+import InputDataNumber from '../components/InputDataNumber';
 
 const FinancialHomePage = () => {
   return (
@@ -10,7 +11,10 @@ const FinancialHomePage = () => {
       <FinancialMenu />
       <div className="MainBack">
         <div className="MainBloc">
+          
           <Onglets/>
+          
+
         </div>
       </div>
       <Footer />

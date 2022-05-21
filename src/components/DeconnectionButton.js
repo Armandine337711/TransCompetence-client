@@ -10,7 +10,8 @@ const DeconnectionButton = () => {
           Deconnexion
         </Link>
       </button>
-      <button className="ButtonDeconnection">
+      <button 
+      className="ButtonDeconnection">
         Mon compte
       </button>
     </div>
