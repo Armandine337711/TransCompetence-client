@@ -10,33 +10,17 @@ import DataPackage7 from '../components/DataPackage7';
 import DataPackage8 from '../components/DataPackage8';
 import ValidateFinancialData from './ValidateFinancialData';
 
-export default function Onglets() {
-    const [stateOnglets, setStateOnglets] = useState(1);
 
-    const go1 = () => {
-        setStateOnglets(1);
-    }
-    const go2 = () => {
-        setStateOnglets(2);
-    }
-    const go3 = () => {
-        setStateOnglets(3);
-    }
-    const go4 = () => {
-        setStateOnglets(4);
-    }
-    const go5 = () => {
-        setStateOnglets(5);
-    }
-    const go6 = () => {
-        setStateOnglets(6);
-    }
-    const go7 = () => {
-        setStateOnglets(7);
-    }
-    const go8 = () => {
-        setStateOnglets(8);
-    }
+const Onglets = () => {
+    const [stateOnglets, setStateOnglets] = useState(1);
+    const go1 = () => {setStateOnglets(1);}
+    const go2 = () => {setStateOnglets(2);}
+    const go3 = () => {setStateOnglets(3);}
+    const go4 = () => {setStateOnglets(4);}
+    const go5 = () => {setStateOnglets(5);}
+    const go6 = () => {setStateOnglets(6);}
+    const go7 = () => {setStateOnglets(7);}
+    const go8 = () => {setStateOnglets(8);}
   return (
     <div>
         <div className='contButton'>
@@ -66,3 +50,4 @@ export default function Onglets() {
   )
 }
 
+export default Onglets;

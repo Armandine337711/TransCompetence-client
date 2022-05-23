@@ -1,28 +1,19 @@
-import React, { Component } from 'react';
+import React, { useState, Component } from 'react';
 import '../style/style.css'
 
-class InputDataText extends Component {
-    constructor(props){
-        super(props);
+function InputDataText (props) {
+    const [label, setLabel] = useState('');
+    const [id,  setId] = useState('');
+    const [value, setValue] = useState('');
 
-        this.state = {
-            label:'',
-            ref: '',
-            value: ''
-        };
-    };
-    render(){
-        return(
-            <div className='Input-data'>
-			  <label>{this.props.label} </label>
-			  <input 
+    return(
+        <div className='Input-data'>
+            <label>{props.label} </label>
+            <input 
                 type="Text" 
-                value={this.state.value}
-                placeholder={this.props.placeholder}
-                onChange={(event) => this.setState({value: event.target.value })}
-              />
-			</div>
-        )
-    }
+                onChange={event => setValue(event.target.value)}
+            />
+        </div>
+    );
 }
 export default InputDataText;

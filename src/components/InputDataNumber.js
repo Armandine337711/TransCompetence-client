@@ -1,36 +1,19 @@
-import React, { Component } from 'react';
+import React, { useState, Component } from 'react';
 import '../style/style.css'
 
-class InputDataNumber extends Component {
-    constructor(props){
-        super(props);
-        let IDs = this.props.label.substring(0,3)
-
-        this.state = {
-            id: IDs,
-            value: ''
-        };
-        this.handleChange = this.handleChange.bind(this)
-    };
-    handleChange(e) {
-        this.setState({value: e.target.value})
-    }
-    
-    render(){
-        return(
-            <div className='Input-data'>
-            
-            <label>{this.props.label} </label>
+function InputDataNumber (props) {
+    const [label, setLabel] = useState('');
+    const [id,  setId] = useState('');
+    const [value, setValue] = useState('');
+        
+    return(
+        <div className='Input-data'>
+            <label>{props.label} </label>
             <input 
                 type="number" 
-                id = {this.state.id}
-                value= {this.state.value}
-                placeholder={this.props.placeholder}
-                onChange={this.handleChange}
-        
-              />
-			</div>
-        )
-    }
+                onChange={event => setValue(event.target.value)}
+            />
+        </div>
+    )    
 }
 export default InputDataNumber;

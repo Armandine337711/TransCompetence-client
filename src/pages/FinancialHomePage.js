@@ -11,10 +11,7 @@ const FinancialHomePage = () => {
       <FinancialMenu />
       <div className="MainBack">
         <div className="MainBloc">
-          
           <Onglets/>
-          
-
         </div>
       </div>
       <Footer />
