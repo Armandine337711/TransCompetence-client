@@ -1,0 +1,508 @@
+/* COLOR */
+/* Police */
+/* Mixin header */
+/*Mixin form style */
+body {
+  width: 90%;
+  margin: auto;
+  margin-top: 10px;
+  text-decoration: none;
+}
+
+.HeaderLogo {
+  height: 22vh;
+  margin-top: 10px;
+  margin-left: 50px;
+}
+
+.Footer {
+  height: 8vh;
+  background-color: #C4C4C4;
+  text-align: center;
+}
+
+.MainBack {
+  background-color: #408CB7;
+  height: 65vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.MainBloc {
+  background-color: #C4C4C4;
+  width: 90%;
+  height: 80%;
+  border-radius: 30px;
+  padding: 10px;
+  text-align: center;
+}
+
+/* Global style of the page*/
+.ConnectionPage {
+  background-color: #408CB7;
+  height: 66vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.LabelUser, .PasswordUser, .ConnectionValidate {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+/* Style of the page title*/
+.ConnectionTitle {
+  font-size: 50px;
+  font-style: bold;
+  font-family: "lato";
+}
+
+/* Form style */
+.PasswordUser, .LabelUser {
+  font-size: 32px;
+  font-family: "inter";
+}
+
+#user, #password {
+  height: 42px;
+  width: 280px;
+  background-color: #C4C4C4;
+  font-size: 32px;
+}
+
+/*Button Style*/
+.ConnectionValidate {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 50px;
+}
+
+.ConnectionButton {
+  height: 43px;
+  width: 191px;
+  background-color: #7CB9D5;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+NavLink {
+  text-decoration: none;
+}
+
+.AdminMenuList {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.AdminMenu {
+  background-color: #C4C4C4;
+  width: 50vw;
+  height: 60px;
+  border-radius: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.AdminMenuItem {
+  font-family: "inter";
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  font-size: 24px;
+}
+
+.GlobalHeaderAdmin {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+
+.HeaderAdminRight {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-right: 1%;
+}
+
+.GlobalHeaderSales {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+
+.HeaderSalesRight {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-right: 1%;
+}
+
+.SalesMenu {
+  background-color: #C4C4C4;
+  width: 50vw;
+  height: 60px;
+  border-radius: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.SalesMenuList {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.SalesMenuItem {
+  font-family: "inter";
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  font-size: 24px;
+}
+
+.GlobalHeaderFinancial {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+
+.HeaderFinancialRight {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-right: 1%;
+}
+
+.FinancialMenu {
+  background-color: #C4C4C4;
+  width: 50vw;
+  height: 60px;
+  border-radius: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.FinancialMenuList {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.FinancialMenuItem {
+  font-family: "inter";
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  font-size: 24px;
+}
+
+.GlobalHeaderDBC {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+
+.HeaderDBCRight {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-right: 1%;
+}
+
+.DBCMenu {
+  background-color: #C4C4C4;
+  width: 50vw;
+  height: 60px;
+  border-radius: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.DBCMenuList {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.DBCMenuItem {
+  font-family: "inter";
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  font-size: 24px;
+}
+
+.contButton {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.onglets {
+  background-color: #408CB7;
+  border: solid 1.5px #408CB7;
+  color: white;
+  margin: 1px;
+  padding: 5px;
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  cursor: pointer;
+}
+
+.container {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.activeOnglet {
+  background-color: white;
+  color: #408CB7;
+}
+
+.ValidateButton {
+  padding: 10px;
+  background-color: #7CB9D5;
+  border: solid 1px #C4C4C4;
+  margin-top: 25px;
+  border-radius: 15px;
+  font-size: 1.3rem;
+  -webkit-box-shadow: 3px 3px 3px;
+          box-shadow: 3px 3px 3px;
+}
+
+.ButtonDeconnection {
+  background-color: white;
+  font-size: 24px;
+  font-family: "inter";
+  color: #408CB7;
+  border: 1px solid #408CB7;
+  border-radius: 15px;
+  padding: 5px;
+  margin-left: 15px;
+}
+
+.HeaderButtonDeco {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.salesTable {
+  width: 100%;
+  font-size: 1.2rem;
+}
+
+table input {
+  font-size: 1.2rem;
+  border-radius: 8px;
+  -webkit-box-shadow: 4px 4px 4px grey;
+          box-shadow: 4px 4px 4px grey;
+}
+
+.Input-data {
+  text-align: left;
+}
+
+.Input-data input {
+  width: 100px;
+  text-align: center;
+}
+
+.FormNewUser {
+  border-radius: 8px;
+  -webkit-box-shadow: 4px 4px 4px grey;
+          box-shadow: 4px 4px 4px grey;
+  font-size: 32px;
+}
+
+.LabelNewUser {
+  font-size: 36px;
+  margin-right: 10px;
+}
+
+.TitleAdminNewUser {
+  font-size: 2.5rem;
+}
+
+.FormNewUserGeneral {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  height: 100%;
+  font-family: "inter";
+}
+
+.BlocNewUser {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.HomeStyle {
+  height: 85%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.HomeBlocsStyle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 70%;
+  width: 90%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  color: #0097e6;
+}
+
+.HomeBloc {
+  background-color: #C4C4C4;
+  height: 100%;
+  width: 40%;
+  border-radius: 20px;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  font-size: 1.8rem;
+  padding: 15px;
+}
+
+.HomeMessage {
+  font-size: 2rem;
+}
+/*# sourceMappingURL=style.css.map */
