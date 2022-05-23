@@ -2,6 +2,7 @@
 /* Police */
 /* Mixin header */
 /*Mixin form style */
+/* Home Page */
 body {
   width: 90%;
   margin: auto;
@@ -479,13 +480,33 @@ table input {
   width: 90%;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  color: #0097e6;
 }
 
 .HomeBloc {
   background-color: #C4C4C4;
   height: 100%;
+  border-radius: 20px;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  font-size: 1.8rem;
+  padding: 15px;
   width: 40%;
+}
+
+.HomeBlocFin {
+  width: 40%;
+  background-color: black;
+  background-color: #C4C4C4;
+  height: 100%;
   border-radius: 20px;
   text-align: center;
   display: -webkit-box;

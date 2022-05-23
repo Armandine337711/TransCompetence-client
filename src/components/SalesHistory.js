@@ -8,7 +8,7 @@ const SalesHistory = () => {
   // ]
 
   return (
-    <>
+    <div>
       <table className="salesTable">
 
         <tr>
@@ -32,7 +32,7 @@ const SalesHistory = () => {
           </th>
         </tr>
       </table>
-    </>
+    </div>
   );
 };
 

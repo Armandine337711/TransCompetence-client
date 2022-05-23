@@ -6,11 +6,11 @@ import Connection from '../components/Connection'
 
 const userConnection = () => {
   return (
-    <>
+    <div>
       <Header />
       <Connection />
       <Footer />
-    </>
+    </div>
   );
 };
 
