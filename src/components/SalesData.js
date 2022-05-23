@@ -3,7 +3,7 @@ import '../style/style.css'
 
 const SalesData = () => {
   return (
-    <>
+    <div>
       <table className="salesTable">
 
         <tr>
@@ -218,7 +218,7 @@ const SalesData = () => {
         </tr>
 
       </table>
-    </>
+    </div>
   );
 };
 

@@ -5,7 +5,7 @@ import '../style/style.css'
 export class DataPackage2 extends Component {
   render() {
     return (
-      <>
+      <div>
         <InputDataNumber
           label="E08: Consommation de Gazole aux 100 km (litre pour 100 km)"
           id='E08'
@@ -22,7 +22,7 @@ export class DataPackage2 extends Component {
           label="E11: Prix moyen du litre de Gazole citerne (hors toutes taxes récupérables) (€)"
           id='E11'
         />
-      </>
+      </div>
     )
   }
 }
