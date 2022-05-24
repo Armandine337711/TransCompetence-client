@@ -16,13 +16,15 @@ const SalesHeader = () => {
         <div className="SalesMenu">
           <ul className="SalesMenuList">
             <li className="SalesMenuItem" >
-              <NavLink to="/salesdata">
+              <NavLink to="/salesdata"
+              className="LinkMenu">
                 Nouveau Chiffrage
               </NavLink>
             </li>
             <li className="SalesMenuItem" >
-              <NavLink to="/saleshistory">
-                Historique
+              <NavLink to="/saleshistory"
+              className="LinkMenu">
+                Historique chiffrage
               </NavLink>
             </li>
           </ul>

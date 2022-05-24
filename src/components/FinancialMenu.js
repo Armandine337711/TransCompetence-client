@@ -17,17 +17,20 @@ const FinancialMenu = () => {
         <div className="FinancialMenu">
           <ul className="FinancialMenuList">
             <li className="FinancialMenuItem" >
-              <NavLink to="#">
+              <NavLink to="#"
+              className="LinkMenu">
                Tableau de bord
               </NavLink>
             </li>
             <li className="FinancialMenuItem" >
-              <NavLink to="/financialhome">
+              <NavLink to="/financialhome"
+              className="LinkMenu">
                 Saisies données
               </NavLink>
             </li>
             <li className="FinancialMenuItem">
-              <NavLink to="#">
+              <NavLink to="#"
+              className="LinkMenu">
                 Récapitulatif
               </NavLink>
             </li>

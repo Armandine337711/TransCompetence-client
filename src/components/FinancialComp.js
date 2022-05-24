@@ -10,37 +10,37 @@ const FinancialComp = () => {
     </div>
     <div className="HomeBlocsStyle">
      
-      <div
+      <NavLink to="#"
         className="HomeBlocFin">
           <h2 className="TitleHome">
-            Liste Utilisateurs
+            Tableau de bord
           </h2>
           <span>
-            Retrouvez la liste de tous les utilisateurs enregistrés sur l'application, ainsi que les informations les concernant. Vous pourrez les consulter, les modifier et les supprimer.
+            Cliquez ici pour visualiser le tableau de bord.
           </span>
-      </div>
+      </NavLink>
 
-      <div 
+      <NavLink to="/financialhome"
         className="HomeBlocFin">
           <h2 className="TitleHome">
-            Ajouter un nouvel utilisateur
+            Saisies données
           </h2>
           <span>
-            Cliquez ici si vous souhaitez créer un nouvel utilisateur, afin de l'enregistrer et lui attribuer un rôle et des droits.
+            Saississez les données annuelles du controle de gestion.
           </span>
+      </NavLink>
 
-      </div>
-
-      <div 
+      <NavLink to="#" 
         className="HomeBlocFin">
+
           <h2 className="TitleHome">
-            Ajouter un nouvel utilisateur
+            Récapitulatif
           </h2>
           <span>
-            Cliquez ici si vous souhaitez créer un nouvel utilisateur, afin de l'enregistrer et lui attribuer un rôle et des droits.
+            Visualisez l'ensemble des données saisies afin de les valider ou les corriger si necessaire.
           </span>
 
-      </div>
+      </NavLink>
     </div>
   </div>
   );

@@ -1,18 +1,22 @@
 import React from 'react';
 import '../style/style.css'
-import {Link} from 'react-router-dom'
+import {NavLink} from 'react-router-dom'
 
 const DeconnectionButton = () => {
   return (
     <div >
       <button className="ButtonDeconnection">
-        <Link to="/">
+        <NavLink to="/"
+        className="LinkMenu">
           Deconnexion
-        </Link>
+        </NavLink>
       </button>
       <button 
       className="ButtonDeconnection">
-        Mon compte
+        <NavLink to="/"
+        className="LinkMenu">
+          Mon compte
+        </NavLink>
       </button>
     </div>
   );

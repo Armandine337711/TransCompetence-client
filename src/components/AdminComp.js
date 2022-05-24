@@ -12,7 +12,7 @@ const AdminComp = () => {
       </div>
       <div className="HomeBlocsStyle">
        
-        <div
+        <NavLink to="/adminhome"
           className="HomeBloc">
             <h2 className="TitleHome">
               Liste Utilisateurs
@@ -20,9 +20,9 @@ const AdminComp = () => {
             <span>
               Retrouvez la liste de tous les utilisateurs enregistrés sur l'application, ainsi que les informations les concernant. Vous pourrez les consulter, les modifier et les supprimer.
             </span>
-        </div>
+        </NavLink>
 
-        <div 
+        <NavLink to="/adminnewuser" 
           className="HomeBloc">
             <h2 className="TitleHome">
               Ajouter un nouvel utilisateur
@@ -31,7 +31,7 @@ const AdminComp = () => {
               Cliquez ici si vous souhaitez créer un nouvel utilisateur, afin de l'enregistrer et lui attribuer un rôle et des droits.
             </span>
 
-        </div>
+        </NavLink>
       </div>
     </div>
   );

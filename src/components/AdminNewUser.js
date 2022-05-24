@@ -14,6 +14,36 @@ const AdminNewUser = () => {
           className="FormNewUserGeneral">
           <div>
             <label 
+              for="Name"
+              className="LabelNewUser"> Prénom : 
+
+            </label>
+            <input
+              type="text"
+              id="Name"
+              placeholder="Prénom"
+              className="FormNewUser">
+            </input>
+          </div>
+
+
+          <div>
+            <label 
+              for="SurName"
+              className="LabelNewUser"> Nom : 
+
+            </label>
+            <input
+              type="text"
+              id="SurName"
+              placeholder="Nom"
+              className="FormNewUser">
+            </input>
+          </div>
+
+
+          <div>
+            <label 
               for="NewUsername"
               className="LabelNewUser"> Identifiant : 
 

@@ -16,12 +16,14 @@ const AdminMenu = () => {
         <div className="AdminMenu">
           <ul className="AdminMenuList">
             <li className=" AdminMenuItem" >
-              <NavLink to="/adminhome">
+              <NavLink to="/adminhome"
+              className="LinkMenu">
                 Liste utilisateurs
               </NavLink>
             </li>
             <li className="AdminMenuItem" >
-              <NavLink to="/adminnewuser">
+              <NavLink to="/adminnewuser"
+              className="LinkMenu">
                 Ajouter
               </NavLink>
             </li>

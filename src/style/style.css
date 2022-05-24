@@ -10,6 +10,11 @@ body {
   text-decoration: none;
 }
 
+.LinkMenu {
+  text-decoration: none;
+  color: #0097e6;
+}
+
 .HeaderLogo {
   height: 22vh;
   margin-top: 10px;
@@ -499,12 +504,13 @@ table input {
           justify-content: space-evenly;
   font-size: 1.8rem;
   padding: 15px;
+  text-decoration: none;
+  color: #0097e6;
   width: 40%;
 }
 
 .HomeBlocFin {
-  width: 40%;
-  background-color: black;
+  width: 28%;
   background-color: #C4C4C4;
   height: 100%;
   border-radius: 20px;
@@ -521,6 +527,8 @@ table input {
           justify-content: space-evenly;
   font-size: 1.8rem;
   padding: 15px;
+  text-decoration: none;
+  color: #0097e6;
 }
 
 .HomeMessage {

@@ -10,26 +10,26 @@ const SalesComp = () => {
     </div>
     <div className="HomeBlocsStyle">
      
-      <div
+      <NavLink to="/salesdata"
         className="HomeBloc">
           <h2 className="TitleHome">
-            Liste Utilisateurs
+            Nouveau chiffrage
           </h2>
           <span>
-            Retrouvez la liste de tous les utilisateurs enregistrés sur l'application, ainsi que les informations les concernant. Vous pourrez les consulter, les modifier et les supprimer.
+            Retrouvez ici le formulaire permettant de rentrer toutes les données necessaires à l'eteblissement d'un nouveau chiffrage.
           </span>
-      </div>
+      </NavLink>
 
-      <div 
+      <NavLink to="/saleshistory" 
         className="HomeBloc">
           <h2 className="TitleHome">
-            Ajouter un nouvel utilisateur
+            Historique chiffrage
           </h2>
           <span>
-            Cliquez ici si vous souhaitez créer un nouvel utilisateur, afin de l'enregistrer et lui attribuer un rôle et des droits.
+            Consultez l'historique des anciens chiffrage. Vous pourrez accéder aux détails ainsi que les dupliquer.
           </span>
 
-      </div>
+      </NavLink>
     </div>
   </div>
   );

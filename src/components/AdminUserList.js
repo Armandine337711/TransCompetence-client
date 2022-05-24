@@ -26,7 +26,13 @@ const AdminUserList = () => {
             Nom
           </th>
           <th>
-            Prénom
+           Prénom
+          </th>
+          <th>
+            Identifiant
+          </th>
+          <th>
+            Rôle
           </th>
           <th>
             Email
