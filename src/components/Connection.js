@@ -2,7 +2,7 @@ import { useState } from 'react';
 import '../style/style.css'
 
 const Connection = () => {
-  const API_URL = process.env.REACT_APP_API_URL
+  const API_URL = process.env.REACT_APP_API_URL2
   const [loginUser, setLoginUser] = useState({
     login: '',
     password: ''
@@ -10,7 +10,6 @@ const Connection = () => {
   // const [password, setPassword] = useState('');
 
   const handleChange = (event) => {
-    console.log(event)
     const name = event.currentTarget.name;
     const value = event.currentTarget.value;
     setLoginUser(values => ({ ...values, [name]: value }))
