@@ -8,7 +8,7 @@ const DeconnectionButton = () => {
       <button className="ButtonDeconnection">
         <NavLink to="/"
         className="LinkMenu">
-          Deconnexion
+          Déconnexion
         </NavLink>
       </button>
       <button 
