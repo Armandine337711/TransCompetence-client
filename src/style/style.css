@@ -16,9 +16,16 @@ body {
 }
 
 .HeaderLogo {
-  height: 22vh;
   margin-top: 10px;
   margin-left: 50px;
+  width: 30vw;
+}
+
+@media (max-width: 850px) {
+  .HeaderLogo {
+    width: 50vw;
+    margin-bottom: 10px;
+  }
 }
 
 .Footer {
@@ -29,7 +36,6 @@ body {
 
 .MainBack {
   background-color: #408CB7;
-  height: 65vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -39,6 +45,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  height: 65vh;
 }
 
 .MainBloc {
@@ -48,6 +55,7 @@ body {
   border-radius: 30px;
   padding: 10px;
   text-align: center;
+  overflow: auto;
 }
 
 /* Global style of the page*/
@@ -141,11 +149,23 @@ NavLink {
   display: flex;
 }
 
+@media (max-width: 850px) {
+  .AdminMenu {
+    width: 90vw;
+  }
+}
+
 .AdminMenuItem {
   font-family: "inter";
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
-  font-size: 24px;
+  font-size: 1.5rem;
+}
+
+@media (max-width: 700px) {
+  .AdminMenuItem {
+    font-size: 1rem;
+  }
 }
 
 .GlobalHeaderAdmin {
@@ -157,6 +177,12 @@ NavLink {
           justify-content: space-between;
   margin-top: 15px;
   margin-bottom: 20px;
+}
+
+@media screen and (max-width: 900px) {
+  .GlobalHeaderAdmin {
+    display: block;
+  }
 }
 
 .HeaderAdminRight {
@@ -183,6 +209,12 @@ NavLink {
   margin-bottom: 20px;
 }
 
+@media screen and (max-width: 900px) {
+  .GlobalHeaderSales {
+    display: block;
+  }
+}
+
 .HeaderSalesRight {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -206,6 +238,12 @@ NavLink {
   display: flex;
 }
 
+@media (max-width: 850px) {
+  .SalesMenu {
+    width: 90vw;
+  }
+}
+
 .SalesMenuList {
   list-style-type: none;
   display: -webkit-box;
@@ -223,7 +261,13 @@ NavLink {
   font-family: "inter";
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
-  font-size: 24px;
+  font-size: 1.5rem;
+}
+
+@media (max-width: 700px) {
+  .SalesMenuItem {
+    font-size: 1rem;
+  }
 }
 
 .GlobalHeaderFinancial {
@@ -235,6 +279,12 @@ NavLink {
           justify-content: space-between;
   margin-top: 15px;
   margin-bottom: 20px;
+}
+
+@media screen and (max-width: 900px) {
+  .GlobalHeaderFinancial {
+    display: block;
+  }
 }
 
 .HeaderFinancialRight {
@@ -260,6 +310,12 @@ NavLink {
   display: flex;
 }
 
+@media (max-width: 850px) {
+  .FinancialMenu {
+    width: 90vw;
+  }
+}
+
 .FinancialMenuList {
   list-style-type: none;
   display: -webkit-box;
@@ -277,7 +333,13 @@ NavLink {
   font-family: "inter";
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
-  font-size: 24px;
+  font-size: 1.5rem;
+}
+
+@media (max-width: 700px) {
+  .FinancialMenuItem {
+    font-size: 1rem;
+  }
 }
 
 .GlobalHeaderDBC {
@@ -289,6 +351,12 @@ NavLink {
           justify-content: space-between;
   margin-top: 15px;
   margin-bottom: 20px;
+}
+
+@media screen and (max-width: 900px) {
+  .GlobalHeaderDBC {
+    display: block;
+  }
 }
 
 .HeaderDBCRight {
@@ -314,6 +382,12 @@ NavLink {
   display: flex;
 }
 
+@media (max-width: 850px) {
+  .DBCMenu {
+    width: 90vw;
+  }
+}
+
 .DBCMenuList {
   list-style-type: none;
   display: -webkit-box;
@@ -331,7 +405,13 @@ NavLink {
   font-family: "inter";
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
-  font-size: 24px;
+  font-size: 1.5rem;
+}
+
+@media (max-width: 700px) {
+  .DBCMenuItem {
+    font-size: 1rem;
+  }
 }
 
 .contButton {
@@ -394,6 +474,7 @@ NavLink {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  margin-bottom: 15px;
 }
 
 .salesTable {
@@ -406,6 +487,12 @@ table input {
   border-radius: 8px;
   -webkit-box-shadow: 4px 4px 4px grey;
           box-shadow: 4px 4px 4px grey;
+}
+
+@media (max-width: 900px) and (min-width: 600px) {
+  table input {
+    font-size: 1rem;
+  }
 }
 
 .Input-data {
@@ -421,11 +508,17 @@ table input {
   border-radius: 8px;
   -webkit-box-shadow: 4px 4px 4px grey;
           box-shadow: 4px 4px 4px grey;
-  font-size: 32px;
+  font-size: 1.8rem;
+}
+
+@media (max-width: 750px) {
+  .FormNewUser {
+    font-size: 1.3rem;
+  }
 }
 
 .LabelNewUser {
-  font-size: 36px;
+  font-size: 1.8rem;
   margin-right: 10px;
 }
 
@@ -459,6 +552,10 @@ table input {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+.TitleAdminNewUser {
+  margin-bottom: 15px;
 }
 
 .HomeStyle {
@@ -509,6 +606,18 @@ table input {
   width: 40%;
 }
 
+@media (max-width: 1024px) and (min-width: 750px) {
+  .HomeBloc {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 750px) {
+  .HomeBloc {
+    font-size: 0.9rem;
+  }
+}
+
 .HomeBlocFin {
   width: 28%;
   background-color: #C4C4C4;
@@ -531,8 +640,34 @@ table input {
   color: #0097e6;
 }
 
+@media (max-width: 1024px) and (min-width: 750px) {
+  .HomeBlocFin {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 750px) {
+  .HomeBlocFin {
+    font-size: 0.9rem;
+  }
+}
+
 .HomeMessage {
   font-size: 2rem;
+  width: 70%;
+  text-align: center;
+}
+
+@media (max-width: 1024px) and (min-width: 800px) {
+  .HomeMessage {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .HomeMessage {
+    font-size: 1rem;
+  }
 }
 
 .AccountStyle {
