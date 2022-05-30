@@ -10,6 +10,12 @@ body {
   text-decoration: none;
 }
 
+@media (max-width: 750px) {
+  body {
+    width: 100%;
+  }
+}
+
 .LinkMenu {
   text-decoration: none;
   color: #0097e6;
@@ -38,6 +44,13 @@ body {
   height: 70px;
 }
 
+@media (max-width: 750px) {
+  .DBLogo {
+    width: 100px;
+    height: 50px;
+  }
+}
+
 .MainBack {
   background-color: #408CB7;
   display: -webkit-box;
@@ -50,6 +63,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   height: 65vh;
+  margin-bottom: 5px;
 }
 
 .MainBloc {
@@ -156,6 +170,7 @@ NavLink {
 @media (max-width: 850px) {
   .AdminMenu {
     width: 90vw;
+    margin-left: 10px;
   }
 }
 
@@ -245,6 +260,7 @@ NavLink {
 @media (max-width: 850px) {
   .SalesMenu {
     width: 90vw;
+    margin-left: 10px;
   }
 }
 
@@ -317,6 +333,7 @@ NavLink {
 @media (max-width: 850px) {
   .FinancialMenu {
     width: 90vw;
+    margin-left: 10px;
   }
 }
 
@@ -389,6 +406,7 @@ NavLink {
 @media (max-width: 850px) {
   .DBCMenu {
     width: 90vw;
+    margin-left: 10px;
   }
 }
 
@@ -469,6 +487,12 @@ NavLink {
   border-radius: 15px;
   padding: 5px;
   margin-left: 15px;
+}
+
+@media (max-width: 750px) {
+  .ButtonDeconnection {
+    margin-right: 10px;
+  }
 }
 
 .HeaderButtonDeco {
@@ -656,6 +680,12 @@ table input {
   }
 }
 
+@media (max-width: 800px) {
+  .HomeBlocFin {
+    width: 24%;
+  }
+}
+
 .HomeMessage {
   font-size: 2rem;
   width: 70%;
@@ -671,6 +701,22 @@ table input {
 @media (max-width: 800px) {
   .HomeMessage {
     font-size: 1rem;
+  }
+}
+
+.TitleHome {
+  font-size: 2.5rem;
+}
+
+@media (max-width: 1200px) and (min-width: 800px) {
+  .TitleHome {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .TitleHome {
+    font-size: 1.2rem;
   }
 }
 
