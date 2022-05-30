@@ -1,10 +1,15 @@
 .FormNewUser
   @include GeneralFormStyle
-  font-size: 32px
+  font-size: 1.8rem
+  @media (max-width: 750px)
+    font-size: 1.3rem
+
 
 .LabelNewUser
-  font-size: 36px
+  font-size: 1.8rem
   margin-right: 10px
+  @media (max-width: 750px)
+    1.3rem
 
 .TitleAdminNewUser
   font-size: 2.5rem
@@ -23,3 +28,6 @@
   height: 100%
   display: flex
   flex-direction: column
+
+.TitleAdminNewUser
+  margin-bottom: 15px
