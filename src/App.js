@@ -9,6 +9,7 @@ import AdminNewUserPage from './pages/AdminNewUserPage'
 import Financial from './pages/Financial';
 import Sales from './pages/Sales';
 import Admin from './pages/Admin';
+import UserAccount from './pages/UserAccount';
 
 
 
@@ -34,6 +35,8 @@ function App() {
         <Route path="/sales" element={<Sales />} />
         <Route path="/admin" element={<Admin />} />
 
+
+        <Route path="/account" element={<UserAccount />} />
 
 
       </Routes>

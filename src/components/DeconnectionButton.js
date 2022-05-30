@@ -13,7 +13,7 @@ const DeconnectionButton = () => {
       </button>
       <button 
       className="ButtonDeconnection">
-        <NavLink to="/"
+        <NavLink to="/account"
         className="LinkMenu">
           Mon compte
         </NavLink>
