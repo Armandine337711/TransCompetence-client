@@ -15,12 +15,16 @@
   height: 60px
   border-radius: 15px
   display: flex
+  @media (max-width: 850px)
+    width: 90vw
 
   
 @mixin MenuItem
   font-family: $FirstPolice
   text-decoration-line: underline
-  font-size: 24px
+  font-size: 1.5rem
+  @media (max-width: 700px)
+    font-size: 1rem
   
 
 @mixin GlobalHeader
@@ -28,6 +32,8 @@
   justify-content: space-between
   margin-top: 15px
   margin-bottom: 20px
+  @media screen and (max-width: 900px)
+    display: block
   
 
 @mixin HeaderRight
@@ -59,4 +65,8 @@
   padding: 15px
   text-decoration: none
   color: $colorHome
+  @media (max-width: 1024px) and (min-width: 750px)
+    font-size: 1.2rem
+  @media (max-width: 750px)
+    font-size: 0.9rem
 
