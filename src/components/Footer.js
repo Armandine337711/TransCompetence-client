@@ -9,8 +9,7 @@ const Footer = () => {
         <img
           src={logodb2}
           alt="Logo db concept"
-          width="281px"
-          height="84px"
+          className="DBLogo"
         ></img>
       </footer>
     </div>
