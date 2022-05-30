@@ -616,6 +616,9 @@ table input {
   background-color: #C4C4C4;
   height: 100%;
   border-radius: 20px;
+  border: 1px solid black;
+  -webkit-box-shadow: 8px 8px 15px black;
+          box-shadow: 8px 8px 15px black;
   text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -651,6 +654,9 @@ table input {
   background-color: #C4C4C4;
   height: 100%;
   border-radius: 20px;
+  border: 1px solid black;
+  -webkit-box-shadow: 8px 8px 15px black;
+          box-shadow: 8px 8px 15px black;
   text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
