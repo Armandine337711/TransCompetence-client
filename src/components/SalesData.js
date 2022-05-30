@@ -14,7 +14,7 @@ const SalesData = () => {
         </tr>
           
         <tr>
-          <td><label for="relationAB">Parcours d'approche jusqu'au point de chargement : relation AB 
+          <td><label htmlFor="relationAB">Parcours d'approche jusqu'au point de chargement : relation AB 
         </label>
         </td>
           <td>
@@ -39,27 +39,27 @@ const SalesData = () => {
 
 
         <tr>
-          <td><label for="TimeCharge">Temps de chargement en B	
+          <td><label htmlFor="TimeChargeB">Temps de chargement en B	
             </label>
             </td>
           <td></td>
           <td></td>
           <td><input 
-            name="relationAB" 
-            id="relationABTemps">
+            name="TimeChargeB" 
+            id="TimeChargeB">
           </input>
           </td>
         </tr>
 
 
         <tr>
-          <td><label for="relationBC">Transport en charge : relation BC
+          <td><label htmlFor="relationBC">Transport en charge : relation BC
             </label>
           </td>
           <td>
             <input
               name="relationBC"
-              id="relationBCdistance">
+              id="relationBC">
             </input>
           </td>
           <td>
@@ -79,7 +79,7 @@ const SalesData = () => {
 
 
         <tr>
-          <td><label for="TimeChargeC">Temps de déchargement en C	
+          <td><label htmlFor="TimeChargeC">Temps de déchargement en C	
             </label>
           </td>
           <td></td>
@@ -95,7 +95,7 @@ const SalesData = () => {
 
 
         <tr>
-          <td><label>Retour au point de chargement : relation CB
+          <td><label htmlFor='relationCBdistance'>Retour au point de chargement : relation CB
             </label>
           </td>
           <td>
@@ -121,7 +121,7 @@ const SalesData = () => {
 
 
         <tr>
-          <td><label>Retour après le dernier déchargement à la base de départ : relation CA
+          <td><label htmlFor='reletionCAdiastance'>Retour après le dernier déchargement à la base de départ : relation CA
             </label>
           </td>
           <td>
