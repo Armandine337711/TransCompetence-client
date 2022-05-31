@@ -1,7 +1,7 @@
 import React from 'react';
-import '../style/style.css'
-import Header from './Header'
-import DeconnectionButton from './DeconnectionButton';
+import '../../style/style.css'
+import Header from '../Header'
+import DeconnectionButton from '../DeconnectionButton';
 import {NavLink} from 'react-router-dom'
 
 

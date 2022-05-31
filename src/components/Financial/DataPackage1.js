@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
-import InputDataNumber from '../components/InputDataNumber';
-import InputDataText from '../components/InputDataText';
-import '../style/style.css'
+import InputDataNumber from './InputDataNumber';
+import InputDataText from './InputDataText';
+import '../../style/style.css'
 
 export class DataPackage1 extends Component {
   render() {

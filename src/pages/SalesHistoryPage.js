@@ -1,7 +1,7 @@
 import React from 'react';
 import Footer from '../components/Footer';
-import SalesHistory from '../components/SalesHistory';
-import SalesHeader from '../components/SalesHeader';
+import SalesHistory from '../components/Sales/SalesHistory';
+import SalesHeader from '../components/Sales/SalesHeader';
 
 const SalesHistoryPage = () => {
   return (

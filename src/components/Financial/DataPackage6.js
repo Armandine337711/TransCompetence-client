@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
-import InputDataNumber from '../components/InputDataNumber';
-import '../style/style.css'
+import InputDataNumber from './InputDataNumber';
+import '../../style/style.css'
 
 export class DataPackage6 extends Component {
   render() {
