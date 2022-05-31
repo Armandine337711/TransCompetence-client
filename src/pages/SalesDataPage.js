@@ -1,7 +1,7 @@
 import React from 'react';
-import SalesHeader from '../components/SalesHeader';
+import SalesHeader from '../components/Sales/SalesHeader';
 import Footer from '../components/Footer.js'
-import SalesData from '../components/SalesData';
+import SalesData from '../components/Sales/SalesData';
 import ValidateSalesData from '../components/ValidateSalesData';
 
 const SalesHomePage = () => {

@@ -1,14 +1,14 @@
 import React, {useState} from 'react';
-import '../style/style.css'
+import '../../style/style.css'
 import DataPackage1 from './DataPackage1';
-import DataPackage2 from '../components/DataPackage2';
-import DataPackage3 from '../components/DataPackage3';
-import DataPackage4 from '../components/DataPackage4';
-import DataPackage5 from '../components/DataPackage5';
-import DataPackage6 from '../components/DataPackage6';
-import DataPackage7 from '../components/DataPackage7';
-import DataPackage8 from '../components/DataPackage8';
-import ValidateFinancialData from './ValidateFinancialData';
+import DataPackage2 from './DataPackage2';
+import DataPackage3 from './DataPackage3';
+import DataPackage4 from './DataPackage4';
+import DataPackage5 from './DataPackage5';
+import DataPackage6 from './DataPackage6';
+import DataPackage7 from './DataPackage7';
+import DataPackage8 from './DataPackage8';
+import ValidateFinancialData from '../ValidateFinancialData';
 
 
 const Onglets = () => {

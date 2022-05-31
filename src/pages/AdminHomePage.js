@@ -1,6 +1,6 @@
 import React from 'react';
-import AdminMenu from '../components/AdminMenu';
-import AdminUserList from '../components/AdminUserList';
+import AdminMenu from '../components/Admin/AdminMenu';
+import AdminUserList from '../components/Admin/AdminUserList';
 import Footer from '../components/Footer';
 
 
