@@ -2,12 +2,12 @@ import { useState } from 'react';
 import '../style/style.css'
 
 const Connection = () => {
-  const API_URL = process.env.REACT_APP_API_URL
+  const API_URL = process.env.REACT_APP_API_URL2
   const [loginUser, setLoginUser] = useState({
     login: '',
     password: ''
   });
-  // const [password, setPassword] = useState('');
+  const [user, setUser] = useState('')
 
   const handleChange = (event) => {
     const name = event.currentTarget.name;
@@ -24,7 +24,12 @@ const Connection = () => {
         headers: {
           "Content-Type": "application/json",
         }
-      })
+      }).then((res) => res.json())
+      .then((res) => {
+        setUser(res)
+        console.log(res)
+      });
+    console.log("connected")
   };
 
   return (
