@@ -1,7 +1,12 @@
 import React, { Component } from 'react'
+<<<<<<< HEAD:src/components/DataPackage3.js
 import InputDataNumber from '../components/InputDataNumber';
 import InputDataText from '../components/InputDataText';
 import '../style/style.css'
+=======
+import InputDataNumber from './InputDataNumber';
+import '../../style/style.css'
+>>>>>>> 8f859615262750a63ee68ebc7c34c093adcaa278:src/components/Financial/DataPackage3.js
 
 export class DataPackage3 extends Component {
   render() {

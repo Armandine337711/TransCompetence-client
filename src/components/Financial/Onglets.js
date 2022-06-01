@@ -11,6 +11,19 @@ import DataPackage8 from '../components/DataPackage8';
 import ValidateFinancialData from './ValidateFinancialData';
 const res = "salut"
 
+import React, {useState} from 'react';
+import '../../style/style.css'
+import DataPackage1 from './DataPackage1';
+import DataPackage2 from './DataPackage2';
+import DataPackage3 from './DataPackage3';
+import DataPackage4 from './DataPackage4';
+import DataPackage5 from './DataPackage5';
+import DataPackage6 from './DataPackage6';
+import DataPackage7 from './DataPackage7';
+import DataPackage8 from './DataPackage8';
+import ValidateFinancialData from '../ValidateFinancialData';
+
+
 
 const Onglets = () => {
     

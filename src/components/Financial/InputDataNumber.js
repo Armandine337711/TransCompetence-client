@@ -1,19 +1,19 @@
 import React, { useState, Component } from 'react';
-import '../style/style.css'
+import '../../style/style.css'
 
-function InputDataText (props) {
+function InputDataNumber (props) {
     const [label, setLabel] = useState('');
     const [id,  setId] = useState('');
     const [value, setValue] = useState('');
-
+        
     return(
         <div className='Input-data'>
             <label>{props.label} </label>
             <input 
-                type="Text" 
+                type="number" 
                 onChange={event => setValue(event.target.value)}
             />
         </div>
-    );
+    )    
 }
-export default InputDataText;
+export default InputDataNumber;

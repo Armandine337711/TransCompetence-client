@@ -1,7 +1,7 @@
 import React from 'react';
-import AdminNewUser from '../components/AdminNewUser';
+import AdminNewUser from '../components/Admin/AdminNewUser';
 import Footer from '../components/Footer';
-import AdminMenu from '../components/AdminMenu';
+import AdminMenu from '../components/Admin/AdminMenu';
 
 const AdminNewsUserPage = () => {
   return (
