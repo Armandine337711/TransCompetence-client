@@ -26,7 +26,7 @@ const AdminUserList = () => {
             Nom
           </th>
           <th>
-           Prénom
+            Prénom
           </th>
           <th>
             Identifiant

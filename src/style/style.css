@@ -458,7 +458,7 @@ NavLink {
 }
 
 .container {
-  margin-top: 50px;
+  margin-top: 20px;
   margin-bottom: 50px;
 }
 
@@ -530,6 +530,11 @@ table input {
 .Input-data input {
   width: 100px;
   text-align: center;
+}
+
+.Input-data Label {
+  display: inline-block;
+  width: 460px;
 }
 
 .FormNewUser {

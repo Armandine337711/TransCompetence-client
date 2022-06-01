@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState,useEffect} from 'react';
 import '../style/style.css'
 import DataPackage1 from './DataPackage1';
 import DataPackage2 from '../components/DataPackage2';
@@ -9,9 +9,11 @@ import DataPackage6 from '../components/DataPackage6';
 import DataPackage7 from '../components/DataPackage7';
 import DataPackage8 from '../components/DataPackage8';
 import ValidateFinancialData from './ValidateFinancialData';
+const res = "salut"
 
 
 const Onglets = () => {
+    
     const [stateOnglets, setStateOnglets] = useState(1);
     const go1 = () => {setStateOnglets(1);}
     const go2 = () => {setStateOnglets(2);}
@@ -21,6 +23,25 @@ const Onglets = () => {
     const go6 = () => {setStateOnglets(6);}
     const go7 = () => {setStateOnglets(7);}
     const go8 = () => {setStateOnglets(8);}
+
+    let [yearly_mileage, setyearly_mileage] = useState(null)
+
+    useEffect(() => {
+        fetch('https://transcompetence.herokuapp.com/financial_datas', {
+          method: "POST",
+          headers: {
+            "content-type": "application/html",
+          },
+        })
+          .then((res) => res.json())
+          .then(data => setyearly_mileage(res))
+          .then((res) => {
+            console.log(res);
+          });
+      }, []);
+
+
+
   return (
     <div>
         <div className='contButton'>

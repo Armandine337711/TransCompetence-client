@@ -7,19 +7,19 @@ export class DataPackage1 extends Component {
   render() {
     return (
       <div>
-        <InputDataNumber
+        <InputDataText
           label="E01: Kilométrage annuel moyen du véhicule(km)"
           id='E01'
         />
-        <InputDataNumber
+        <InputDataText
           label="E02: Dont kilométrage en charge (km)"
           id='E02'
         />
-        <InputDataNumber
+        <InputDataText
           label="E03: Nombre de véhicules tractés pour un véhicule moteur"
           id='E03'
         />
-        <InputDataNumber
+        <InputDataText
           label="E04: Nombre de jours d'exploitation du véhicule moteur par an"
           id='E04'
         />
@@ -27,11 +27,11 @@ export class DataPackage1 extends Component {
           label='E05: Unité de chargement (texte libre)'
           id='E05'
         />
-        <InputDataNumber
+        <InputDataText
           label="E06: Capacité de chargement (correspondant à l'unité ci-dessus)"
           id='E06'
         />
-        <InputDataNumber
+        <InputDataText
           label="E07: Coefficient d'utilisation de cette capacité (%)"
           id='E07'
         />
