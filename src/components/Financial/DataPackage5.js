@@ -16,7 +16,7 @@ const DataPackage5 = () => {
     <InputDataText
       label="E34: Mode de financement du véhicule tracté (1 pour Emprunt, 2 pour Crédit Bail, 3 pour Location Financière)"
       id='E34'
-      name=''
+      name='tv_financing_method_id'
     />
     <InputDataText
       label="E35: Valeur du véhicule tracté (€) "

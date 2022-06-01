@@ -31,7 +31,7 @@ const DataPackage1 = () => {
       <InputDataText
         label='E05: Unité de chargement (texte libre)'
         id='E05'
-        name='loading_unit_id'
+        name='loading_unit'
       />
       <InputDataText
         label="E06: Capacité de chargement (correspondant à l'unité ci-dessus)"
