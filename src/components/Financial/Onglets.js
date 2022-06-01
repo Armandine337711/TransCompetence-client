@@ -21,7 +21,7 @@ const Onglets = () => {
     const go6 = () => {setStateOnglets(6);}
     const go7 = () => {setStateOnglets(7);}
     const go8 = () => {setStateOnglets(8);}
-  return (
+return (
     <div>
         <div className='contButton'>
             <div onClick={go1} className={`onglets ${stateOnglets === 1 ? "activeOnglet" : ""}`}>Infos générales</div>
