@@ -27,7 +27,7 @@ const Connection = () => {
       }).then((res) => res.json())
       .then((res) => {
         setUser(res)
-        console.log(res)
+
       });
     console.log("connected")
   };
