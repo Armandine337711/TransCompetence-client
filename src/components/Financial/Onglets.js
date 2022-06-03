@@ -43,7 +43,7 @@ return (
                 {stateOnglets === 6 ?  <DataPackage6/>:null}
                 {stateOnglets === 7 ?  <DataPackage7/>:null}
                 {stateOnglets === 8 ?  <DataPackage8/>:null}
-                <ValidateFinancialData />
+                
             </div>
         </div>
     </div>

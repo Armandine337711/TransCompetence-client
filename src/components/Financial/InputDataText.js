@@ -1,8 +1,6 @@
 import React, { useState, Component, useEffect } from 'react';
 import '../../style/style.css'
 
-
-
 const InputDataText = (props) =>{
     
     function handleChange(event) {

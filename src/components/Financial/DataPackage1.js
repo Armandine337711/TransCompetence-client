@@ -2,6 +2,7 @@ import React, { Component, useState } from 'react'
 import InputDataNumber from './InputDataNumber';
 import InputDataText from './InputDataText';
 import '../../style/style.css'
+import ValidateFinancialData from '../ValidateFinancialData';
 
 
 const DataPackage1 = () => {
@@ -70,7 +71,9 @@ const DataPackage1 = () => {
         value={dp.name}
         onChange={handleChange}
       />
+      <ValidateFinancialData datas= {dp}/>
     </form>
+    
   )
 }
 

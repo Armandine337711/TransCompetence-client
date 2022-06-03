@@ -1,6 +1,7 @@
 import React, { Component, useState } from 'react'
 import InputDataNumber from './InputDataNumber';
 import InputDataText from './InputDataText';
+import ValidateFinancialData from '../ValidateFinancialData';
 import '../../style/style.css'
 
 const DataPackage3 = () => {
@@ -20,7 +21,7 @@ const handleChange = (name, data) => {
   setDp(truc => ({ ...truc, [name]: data }))
 }; 
   return (
-    <div>
+    <form>
       <InputDataNumber
         label="E12: Coûts kilométriques pneumatiques globaux (€/km)"
         id='E12'
@@ -84,7 +85,8 @@ const handleChange = (name, data) => {
         value={dp.name}
         onChange={handleChange}
       />
-  </div>
+      <ValidateFinancialData datas= {dp}/>
+  </form>
   )
 }
 

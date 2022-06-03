@@ -476,6 +476,7 @@ NavLink {
   font-size: 1.3rem;
   -webkit-box-shadow: 3px 3px 3px;
           box-shadow: 3px 3px 3px;
+  cursor: pointer;
 }
 
 .ButtonDeconnection {
