@@ -5,7 +5,7 @@ const ValidateSalesData = () => {
     <div>
      <button 
         type="button" 
-        class="ValidateButton"> Valider
+        className="ValidateButton"> Valider
       </button>
     </div>
   );

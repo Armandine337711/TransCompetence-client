@@ -34,7 +34,7 @@ return (
             <div onClick={go8} className={`onglets ${stateOnglets === 8 ? "activeOnglet" : ""}`}>Autres coûts</div>
         </div>
         <div className='container'>
-            <form>
+            <div>
                 {stateOnglets === 1 ?  <DataPackage1/>:null}
                 {stateOnglets === 2 ?  <DataPackage2/>:null}
                 {stateOnglets === 3 ?  <DataPackage3/>:null}
@@ -44,7 +44,7 @@ return (
                 {stateOnglets === 7 ?  <DataPackage7/>:null}
                 {stateOnglets === 8 ?  <DataPackage8/>:null}
                 <ValidateFinancialData />
-            </form>
+            </div>
         </div>
     </div>
   )

@@ -2,16 +2,18 @@ import React, { useState, Component } from 'react';
 import '../../style/style.css'
 
 function InputDataNumber (props) {
-    const [label, setLabel] = useState('');
-    const [id,  setId] = useState('');
-    const [value, setValue] = useState('');
+    function handleChange(event) {
+        props.onChange(event.currentTarget.name,event.currentTarget.value);
+    }
         
     return(
         <div className='Input-data'>
             <label>{props.label} </label>
             <input 
-                type="number" 
-                onChange={event => setValue(event.target.value)}
+                type="numeric" 
+                name= {props.name}
+                value={props.value}
+                onChange={handleChange}
             />
         </div>
     )    
