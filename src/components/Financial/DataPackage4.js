@@ -6,8 +6,10 @@ import '../../style/style.css'
 
 const DataPackage4 = () => {
   const [dp, setDp] =useState({
+    id:1,
+    dpNb:4,
     duration_motor_vehicle_use: '',
-    motor_vehicle_loading_unit: '',
+    mv_financing_method_id: '',
     value_motor_vehicle:'',
     mv_financing_method_id:'',
     motor_vehicle_loan_amount: '',
@@ -34,7 +36,7 @@ const handleChange = (name, data) => {
       <InputDataNumber
         label="E22: Mode de financement du véhicule moteur (1 pour Emprunt, 2 pour Crédit Bail, 3 pour Location Financière)"
         id='E22'
-        name='motor_vehicle_loading_unit'
+        name='mv_financing_method_id'
         value={dp.name}
         onChange={handleChange}
       />
