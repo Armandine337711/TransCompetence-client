@@ -5,7 +5,7 @@ const ValidateFinancialData = (data) => {
     console.log('dataavant',data)
     let dataapres = JSON.stringify({data})
     console.log('datastring',{dataapres})
-    let datarep = dataapres.data
+    let datarep = dataapres.data.datas
     console.log('datarep',{datarep})
 
 
