@@ -1,8 +1,9 @@
 import { useState } from 'react';
+import { Navigate } from 'react-router-dom';
 import '../style/style.css'
 
 const Connection = () => {
-  const API_URL = process.env.REACT_APP_API_URL2
+  const API_URL = process.env.REACT_APP_API_URL
   const [loginUser, setLoginUser] = useState({
     login: '',
     password: ''
@@ -17,7 +18,7 @@ const Connection = () => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    fetch(`${API_URL}/login`,
+    fetch(`${API_URL}connection/login`,
       {
         method: "POST",
         body: JSON.stringify(loginUser),
@@ -28,7 +29,18 @@ const Connection = () => {
       .then((res) => {
         setUser(res)
 
+        if (res.entitled === "Commercial") {
+          <Navigate to="/sales" />
+        } else if (res.entitled === "Administrateur") {
+          <Navigate to="/admin" />
+        } else if (res.entitled === "Contrôleur de Gestion") {
+          <Navigate to="/financial" />
+        } else if (res.entitled === "DbConcept") {
+          <Navigate to="/" />
+        }
       });
+
+    console.log("user", user)
     console.log("connected")
   };
 
