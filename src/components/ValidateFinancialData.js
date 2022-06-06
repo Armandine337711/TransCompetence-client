@@ -3,8 +3,8 @@ import React from 'react';
 const ValidateFinancialData = () => {
   return (
       <button 
-      ype="button" 
-      class="ValidateButton"> Valider
+        type="button" 
+        class="ValidateButton"> Valider
       </button>
   );
 };
