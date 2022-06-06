@@ -1,9 +1,63 @@
+import { useState } from 'react';
 import React from 'react';
 import '../../style/style.css'
 
 const SalesData = () => {
+
+
+  const [costing, setCosting] = useState({
+    "quotation_date": "",
+    "member_id": 1,
+    "client_id": 1,
+    "AB_distance": null,
+    "AB_toll": null,
+    "AB_duration": null,
+    "B_loading_time": null,
+    "BC_distance": null,
+    "BC_toll": null,
+    "BC_duration": null,
+    "C_unloading_time": null,
+    "CB_distance": null,
+    "CB_toll": null,
+    "CB_duration": null,
+    "CA_distance": null,
+    "CA_toll": null,
+    "CA_duration": null,
+    "loading_unit_id": "",
+    "quantity_loading_unit": null,
+    "dayly_working_time": null
+  });
+
+
+  const handleClick = (e) => {
+    console.log(e);
+    e.preventDefault()
+    fetch("https://transcompetence.herokuapp.com/costing",
+    {
+      method: "POST",
+      body: JSON.stringify(costing),
+      headers: {
+        "Content-Type": "application/json",
+      }
+    })
+    .then((res) => res.json())
+    .then((res) => {
+      setCosting(res)
+    });
+  }
+
+  const handleChange = (e) => {
+    const name = e.currentTarget.name;
+    const value = e.currentTarget.value;
+    setCosting(values => ({ ...values, [name]: value }))
+  }
+
   return (
-    <div>
+    <form
+    action=""
+    method="post"
+    onSubmit={handleClick}
+    >
       <table className="salesTable">
 
         <tr>
@@ -19,20 +73,26 @@ const SalesData = () => {
         </td>
           <td>
             <input 
-              name="relationAB" 
-              id="relationAB">
+              name="AB_distance" 
+              id="relationAB"
+              value={costing.AB_distance}
+              onChange={handleChange}>
             </input>
           </td>
           <td>
             <input 
-              name="relationAB" 
-              id="relationABpeages">
+              name="AB_toll" 
+              id="relationABpeages"
+              value={costing.AB_toll}
+              onChange={handleChange}>
             </input>
           </td>
           <td>
           <input 
-            name="relationAB" 
-            id="relationABTemps">
+            name="AB_duration" 
+            id="relationABTemps"
+            value={costing.AB_duration}
+            onChange={handleChange}>
           </input>
           </td>
         </tr>
@@ -45,8 +105,10 @@ const SalesData = () => {
           <td></td>
           <td></td>
           <td><input 
-            name="TimeChargeB" 
-            id="TimeChargeB">
+            name="B_loaging_time" 
+            id="TimeChargeB"
+            value={costing.B_loading_time}
+            onChange={handleChange}>
           </input>
           </td>
         </tr>
@@ -58,20 +120,26 @@ const SalesData = () => {
           </td>
           <td>
             <input
-              name="relationBC"
-              id="relationBC">
+              name="BC_distance"
+              id="relationBC"
+              value={costing.BC_distance}
+              onChange={handleChange}>
             </input>
           </td>
           <td>
             <input
-              name="relationBC"
-              id="relationBCpeage">
+              name="BC_toll"
+              id="relationBCpeage"
+              value={costing.BC_toll}
+              onChange={handleChange}>
             </input>
           </td>
           <td>
             <input
-              name="relationBC"
-              id="relationBCtime">
+              name="BC_duration"
+              id="relationBCtime"
+              value={costing.BC_duration}
+              onChange={handleChange}>
             </input>
           </td>
         </tr>
@@ -86,8 +154,10 @@ const SalesData = () => {
           <td></td>
           <td>
             <input
-              name="TimeChargeC"
-              id="TimeChargeC">
+              name="C_unloading_time"
+              id="C_unloading_tim"
+              value={costing.C_unloading_time}
+              onChange={handleChange}>
             </input>
           </td>
         </tr>
@@ -100,20 +170,26 @@ const SalesData = () => {
           </td>
           <td>
             <input
-              name="relationCB"
-              id="relationCBdistance">
+              name="CB_distance"
+              id="relationCBdistance"
+              value={costing.CB_distance}
+              onChange={handleChange}>
             </input>
           </td>
           <td>
             <input
-              name="relationCB"
-              id="relationCBpeage">
+              name="CB_toll"
+              id="relationCBpeage"
+              value={costing.CB_toll}
+              onChange={handleChange}>
             </input>
           </td>
           <td>
             <input
-              name="relationCB"
-              id="relationCBtime">
+              name="CB_duration"
+              id="relationCBtime"
+              value={costing.CB_duration}
+              onChange={handleChange}>
             </input>
           </td>
         </tr>
@@ -126,20 +202,26 @@ const SalesData = () => {
           </td>
           <td>
             <input
-              name="relationCA"
-              id="relationCAdistance">
+              name="CA_distance"
+              id="relationCAdistance"
+              value={costing.CA_distance}
+              onChange={handleChange}>
             </input>
           </td>
           <td>
             <input
-              name="relationCA"
-              id="relationCApeage">
+              name="CA_toll"
+              id="CA_toll"
+              value={costing.CA_toll}
+              onChange={handleChange}>
             </input>
             </td>
           <td>
             <input
-              name="relationCA"
-              id="relationCAtime">
+              name="CA_duration"
+              id="CA_duration"
+              value={costing.CA_duration}
+              onChange={handleChange}>
             </input>
           </td>
         </tr>
@@ -171,8 +253,10 @@ const SalesData = () => {
           </td>
           <td>
             <input
-              name=""
-              id="">
+              name="loading_unit_id"
+              id="loading_unit_id"
+              value={costing.loading_unit_id}
+              onChange={handleChange}>
             </input>
           </td>
         </tr>
@@ -185,8 +269,10 @@ const SalesData = () => {
           </td>
           <td>
             <input
-              name=""
-              id="">
+              name="quantity_loading_unit"
+              id="quantity_loading_unit"
+              value={costing.quantity_loading_unit}
+              onChange={handleChange}>
             </input>
           </td>
         </tr>
@@ -211,14 +297,22 @@ const SalesData = () => {
           </td>
           <td>
             <input
-              name=""
-              id="">
+              name="dayly_working_time"
+              id="dayly_working_time"
+              value={costing.dayly_working_time}
+              onChange={handleChange}>
             </input>
           </td>
         </tr>
 
       </table>
-    </div>
+
+      <button 
+        type="submit" 
+        className="ValidateButton"
+        >Valider
+      </button>
+    </form>
   );
 };
 
