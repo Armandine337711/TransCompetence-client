@@ -1,22 +1,17 @@
 import React from 'react';
 
 const ValidateFinancialData = (data) => {
+  const truc = data.datas
+  const truc2=JSON.stringify(truc)
   const sendDatas = () => {
-    console.log('dataavant',data)
-    let dataapres = JSON.stringify({data})
-    console.log('datastring',{dataapres})
-    let datarep = dataapres.data.datas
-    console.log('datarep',{datarep})
-
-
-        fetch('https://transcompetence.herokuapp.com/dp/1', {
+    console.log('truc2', truc2)
+    fetch('https://transcompetence.herokuapp.com/dp/1', {
       method: "PATCH",
-      headers: {'Content-Type':'application/json'},
-      body: JSON.stringify(
-        {datarep}
-        )
-    })
-    
+      headers: { 'Content-Type': 'application/json' },
+      body: (
+        {truc2}
+      )
+    }) 
   }
   return (
       <button onClick = {sendDatas}
