@@ -1,8 +1,9 @@
 import { useState } from 'react';
-import { Navigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import '../style/style.css'
 
 const Connection = () => {
+  let navigate = useNavigate();
   const API_URL = process.env.REACT_APP_API_URL
   const [loginUser, setLoginUser] = useState({
     login: '',
@@ -18,6 +19,7 @@ const Connection = () => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
+
     fetch(`${API_URL}connection/login`,
       {
         method: "POST",
@@ -27,16 +29,21 @@ const Connection = () => {
         }
       }).then((res) => res.json())
       .then((res) => {
+        console.log("res", res)
         setUser(res)
 
-        if (res.entitled === "Commercial") {
-          <Navigate to="/sales" />
-        } else if (res.entitled === "Administrateur") {
-          <Navigate to="/admin" />
-        } else if (res.entitled === "Contrôleur de Gestion") {
-          <Navigate to="/financial" />
-        } else if (res.entitled === "DbConcept") {
-          <Navigate to="/" />
+        if (res.data.entitled === "Commercial") {
+          navigate('/sales')
+          console.log('sales')
+        } else if (res.data.entitled === "Administrateur") {
+          navigate("/admin")
+          console.log("admin")
+        } else if (res.data.entitled === "Contrôleur de Gestion") {
+          navigate("/financial")
+          console.log("financial")
+        } else if (res.data.entitled === "DbConcept") {
+          navigate("/")
+          console.log("choucroute")
         }
       });
 
