@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Navigate } from 'react-router-dom';
 import '../style/style.css'
 
 const Connection = () => {
@@ -7,7 +8,7 @@ const Connection = () => {
     login: '',
     password: ''
   });
-  // const [password, setPassword] = useState('');
+  const [user, setUser] = useState('')
 
   const handleChange = (event) => {
     const name = event.currentTarget.name;
@@ -17,14 +18,30 @@ const Connection = () => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    fetch(`${API_URL}/login`,
+    fetch(`${API_URL}connection/login`,
       {
         method: "POST",
         body: JSON.stringify(loginUser),
         headers: {
           "Content-Type": "application/json",
         }
-      })
+      }).then((res) => res.json())
+      .then((res) => {
+        setUser(res)
+
+        if (res.entitled === "Commercial") {
+          <Navigate to="/sales" />
+        } else if (res.entitled === "Administrateur") {
+          <Navigate to="/admin" />
+        } else if (res.entitled === "Contrôleur de Gestion") {
+          <Navigate to="/financial" />
+        } else if (res.entitled === "DbConcept") {
+          <Navigate to="/" />
+        }
+      });
+
+    console.log("user", user)
+    console.log("connected")
   };
 
   return (
