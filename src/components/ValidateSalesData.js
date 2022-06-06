@@ -4,8 +4,8 @@ const ValidateSalesData = () => {
   return (
     <div>
      <button 
-        type="submit"
-        class="ValidateButton"> Valider
+        type="button" 
+        className="ValidateButton"> Valider
       </button>
     </div>
   );

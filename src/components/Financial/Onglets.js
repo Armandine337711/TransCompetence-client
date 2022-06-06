@@ -21,7 +21,7 @@ const Onglets = () => {
     const go6 = () => {setStateOnglets(6);}
     const go7 = () => {setStateOnglets(7);}
     const go8 = () => {setStateOnglets(8);}
-  return (
+return (
     <div>
         <div className='contButton'>
             <div onClick={go1} className={`onglets ${stateOnglets === 1 ? "activeOnglet" : ""}`}>Infos générales</div>
@@ -34,7 +34,7 @@ const Onglets = () => {
             <div onClick={go8} className={`onglets ${stateOnglets === 8 ? "activeOnglet" : ""}`}>Autres coûts</div>
         </div>
         <div className='container'>
-            <form>
+            <div>
                 {stateOnglets === 1 ?  <DataPackage1/>:null}
                 {stateOnglets === 2 ?  <DataPackage2/>:null}
                 {stateOnglets === 3 ?  <DataPackage3/>:null}
@@ -43,8 +43,8 @@ const Onglets = () => {
                 {stateOnglets === 6 ?  <DataPackage6/>:null}
                 {stateOnglets === 7 ?  <DataPackage7/>:null}
                 {stateOnglets === 8 ?  <DataPackage8/>:null}
-                <ValidateFinancialData />
-            </form>
+                
+            </div>
         </div>
     </div>
   )

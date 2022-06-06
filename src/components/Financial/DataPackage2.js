@@ -1,30 +1,55 @@
-import React, { Component } from 'react'
+import React, { Component, useState } from 'react'
 import InputDataNumber from './InputDataNumber';
+import InputDataText from './InputDataText';
 import '../../style/style.css'
+import ValidateFinancialData from '../ValidateFinancialData';
 
-export class DataPackage2 extends Component {
-  render() {
-    return (
-      <div>
-        <InputDataNumber
-          label="E08: Consommation de Gazole aux 100 km (litre pour 100 km)"
-          id='E08'
+
+const DataPackage2 = () => {
+  const [dp, setDp] =useState({
+    gazoline_consumption: '',
+    average_price_liter: '',
+    proportion_tanker_supply:'',
+    average_price_liter_tanker:'',
+});
+
+const handleChange = (name, data) => {
+  setDp(truc => ({ ...truc, [name]: data }))
+}; 
+  return (
+    <form>
+      <InputDataNumber
+        label="E08: Consommation de Gazole aux 100 km (litre pour 100 km)"
+        id='E08'
+        name='gazoline_consumption'        
+        value={dp.name}
+        onChange={handleChange}
         />
-        <InputDataNumber
-          label="E09: Prix moyen du litre de Gazole route (hors toutes taxes récupérables) (€)"
-          id='E09'
-        />
-        <InputDataNumber
-          label="E10: Part de l'approvisionnement citerne (%)"
-          id='E10'
-        />
-        <InputDataNumber
-          label="E11: Prix moyen du litre de Gazole citerne (hors toutes taxes récupérables) (€)"
-          id='E11'
-        />
-      </div>
-    )
-  }
+      <InputDataNumber
+        label="E09: Prix moyen du litre de Gazole route (hors toutes taxes récupérables) (€)"
+        id='E09'
+        name='average_price_liter'
+        value={dp.name}
+        onChange={handleChange}
+      />
+      <InputDataNumber
+        label="E10: Part de l'approvisionnement citerne (%)"
+        id='E10'
+        name='proportion_tanker_supply'
+        value={dp.name}
+        onChange={handleChange}
+      />
+      <InputDataNumber
+        label="E11: Prix moyen du litre de Gazole citerne (hors toutes taxes récupérables) (€)"
+        id='E11'
+        name='average_price_liter_tanker'
+        value={dp.name}
+        onChange={handleChange}
+      />
+      <ValidateFinancialData datas= {dp}/>
+    </form>
+  )
 }
+
 
 export default DataPackage2

@@ -35,7 +35,6 @@ const Connection = () => {
         method="post"
         className="FormConnection"
         onSubmit={handleSubmit}>
-
         <div
           className='ConnectionUser'>
           <label

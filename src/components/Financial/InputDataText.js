@@ -1,17 +1,20 @@
-import React, { useState, Component } from 'react';
+import React, { useState, Component, useEffect } from 'react';
 import '../../style/style.css'
 
-function InputDataText (props) {
-    const [label, setLabel] = useState('');
-    const [id,  setId] = useState('');
-    const [value, setValue] = useState('');
-
+const InputDataText = (props) =>{
+    
+    function handleChange(event) {
+        props.onChange(event.currentTarget.name,event.currentTarget.value);
+    }
     return(
+        
         <div className='Input-data'>
             <label>{props.label} </label>
             <input 
                 type="Text" 
-                onChange={event => setValue(event.target.value)}
+                name= {props.name}
+                value={props.value}
+                onChange={handleChange}
             />
         </div>
     );
