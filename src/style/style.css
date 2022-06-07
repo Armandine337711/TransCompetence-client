@@ -506,22 +506,41 @@ NavLink {
   margin-bottom: 15px;
 }
 
-.salesTable {
-  width: 100%;
+.wrapper input {
   font-size: 1.2rem;
-}
-
-table input {
-  font-size: 1.2rem;
+  max-height: 20px;
+  width: 200px;
   border-radius: 8px;
   -webkit-box-shadow: 4px 4px 4px grey;
           box-shadow: 4px 4px 4px grey;
 }
 
 @media (max-width: 900px) and (min-width: 600px) {
-  table input {
+  .wrapper input {
     font-size: 1rem;
+    width: 100px;
   }
+}
+
+@media screen and (max-width: 600px) {
+  .wrapper input {
+    font-size: 0.8rem;
+    width: 80px;
+  }
+}
+
+.wrapper {
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 3fr 1fr 1fr 1fr;
+      grid-template-columns: 3fr 1fr 1fr 1fr;
+  -ms-grid-rows: (1fr)[11];
+      grid-template-rows: repeat(11, 1fr);
+}
+
+.wrapper span {
+  font-weight: bold;
 }
 
 .Input-data {
